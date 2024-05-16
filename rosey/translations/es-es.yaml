@@ -86,7 +86,9 @@ _inputs:
     label: "\n    Read More\n  "
     type: text
     comment: |-
-      [Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=Read%20More)
+      [Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=
+      %20%20%20%20Read%20More
+      %20%20)
   site-title:
     label: Hugo Rosey Demo
     type: text
