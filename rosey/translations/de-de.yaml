@@ -83,12 +83,10 @@ _inputs:
       0use%20it%20as%20a%20template%20to%20get%20up%20and%20running%20with%20tr\
       anslation%20workflows%20in%20CloudCannon%20using%20Rosey.)"
   read-more:
-    label: "\n    Read More\n  "
+    label: Read More
     type: text
-    comment: |-
-      [Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=
-      %20%20%20%20Read%20More
-      %20%20)
+    comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=R\
+      ead%20More)"
   site-title:
     label: Hugo Rosey Demo
     type: text
