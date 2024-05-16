@@ -40,7 +40,7 @@ async function main(locale) {
 
   for (const inputKey in inputFileData) {
     const inputTranslationObj = inputFileData[inputKey];
-    const originalPhrase = inputTranslationObj.original;
+    const originalPhrase = inputTranslationObj.original.trim();
 
     // Only add the key to our output data if it still exists in base.json
     // If entry no longer exists in base.json we don't add it
