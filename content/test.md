@@ -11,7 +11,7 @@ seo:
   no_index: false
 content_blocks:
   - _bookshop_name: hero
-    heading: This is a new hero for testing purposes
+    heading: This is a new hero for testing purposes changey-changed
     text: Test richardson here
     button:
 ---
