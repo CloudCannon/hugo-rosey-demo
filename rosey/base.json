@@ -7,10 +7,9 @@
       "pages": {
         "categories/index.html": 2,
         "index.html": 2,
-        "tags/index.html": 2,
-        "test/index.html": 2
+        "tags/index.html": 2
       },
-      "total": 8
+      "total": 6
     },
     "Blog": {
       "original": "Blog",
@@ -18,10 +17,9 @@
       "pages": {
         "categories/index.html": 2,
         "index.html": 2,
-        "tags/index.html": 2,
-        "test/index.html": 2
+        "tags/index.html": 2
       },
-      "total": 8
+      "total": 6
     },
     "Contact": {
       "original": "Contact",
@@ -29,10 +27,9 @@
       "pages": {
         "categories/index.html": 2,
         "index.html": 2,
-        "tags/index.html": 2,
-        "test/index.html": 2
+        "tags/index.html": 2
       },
-      "total": 8
+      "total": 6
     },
     "Feature": {
       "original": "Feature",
@@ -40,10 +37,9 @@
       "pages": {
         "categories/index.html": 2,
         "index.html": 2,
-        "tags/index.html": 2,
-        "test/index.html": 2
+        "tags/index.html": 2
       },
-      "total": 8
+      "total": 6
     },
     "Home": {
       "original": "Home",
@@ -51,10 +47,9 @@
       "pages": {
         "categories/index.html": 2,
         "index.html": 2,
-        "tags/index.html": 2,
-        "test/index.html": 2
+        "tags/index.html": 2
       },
-      "total": 8
+      "total": 6
     },
     "Pricing": {
       "original": "Pricing",
@@ -62,10 +57,9 @@
       "pages": {
         "categories/index.html": 2,
         "index.html": 2,
-        "tags/index.html": 2,
-        "test/index.html": 2
+        "tags/index.html": 2
       },
-      "total": 8
+      "total": 6
     },
     "a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configuration": {
       "original": "A demonstration of how Hugo and Rosey work in CloudCannon. This site has extra setup so that we can enter translations via the CloudCannon GUI. Additional languages can be set in the environment variables in CloudCannon’s build configuration.",
@@ -113,26 +107,9 @@
       "pages": {
         "categories/index.html": 1,
         "index.html": 1,
-        "tags/index.html": 1,
-        "test/index.html": 1
+        "tags/index.html": 1
       },
-      "total": 4
-    },
-    "test-richardson-here": {
-      "original": "Test richardson here",
-      "value": null,
-      "pages": {
-        "test/index.html": 1
-      },
-      "total": 1
-    },
-    "this-is-a-new-hero-for-testing-purposes-changey-changed": {
-      "original": "This is a new hero for testing purposes changey-changed",
-      "value": null,
-      "pages": {
-        "test/index.html": 1
-      },
-      "total": 1
+      "total": 3
     }
   }
 }
