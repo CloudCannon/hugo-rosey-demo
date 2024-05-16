@@ -83,8 +83,8 @@
       },
       "total": 1
     },
-    "keep-what-you-need-delete-the-rest-changed": {
-      "original": "Keep what you need. Delete the rest. CHANGED",
+    "keep-what-you-need-delete-the-rest": {
+      "original": "Keep what you need. Delete the rest.",
       "value": null,
       "pages": {
         "index.html": 1
