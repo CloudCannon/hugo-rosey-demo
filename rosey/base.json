@@ -126,8 +126,8 @@
       },
       "total": 1
     },
-    "this-is-a-new-hero-for-testing-purposes": {
-      "original": "This is a new hero for testing purposes",
+    "this-is-a-new-hero-for-testing-purposes-changey-changed": {
+      "original": "This is a new hero for testing purposes changey-changed",
       "value": null,
       "pages": {
         "test/index.html": 1
