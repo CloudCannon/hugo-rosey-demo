@@ -7,9 +7,7 @@ _inputs:
       groups:
         - heading: Untranslated
           comment: Content to be translated
-          inputs:
-            - test-richardson-here
-            - this-is-a-new-hero-for-testing-purposes-changey-changed
+          inputs: []
         - heading: Translated
           comment: Content already translated
           inputs:
@@ -29,35 +27,30 @@ _inputs:
     label: About
     type: text
     comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=A\
-      bout) | [Test](https://rugged-mandolin.cloudvent.net/test#:~:text=About)"
+      bout)"
   Blog:
     label: Blog
     type: text
-    comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=B\
-      log) | [Test](https://rugged-mandolin.cloudvent.net/test#:~:text=Blog)"
+    comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=Blog)"
   Contact:
     label: Contact
     type: text
     comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=C\
-      ontact) |
-      [Test](https://rugged-mandolin.cloudvent.net/test#:~:text=Contact)"
+      ontact)"
   Feature:
     label: Feature
     type: text
     comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=F\
-      eature) |
-      [Test](https://rugged-mandolin.cloudvent.net/test#:~:text=Feature)"
+      eature)"
   Home:
     label: Home
     type: text
-    comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=H\
-      ome) | [Test](https://rugged-mandolin.cloudvent.net/test#:~:text=Home)"
+    comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=Home)"
   Pricing:
     label: Pricing
     type: text
     comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=P\
-      ricing) |
-      [Test](https://rugged-mandolin.cloudvent.net/test#:~:text=Pricing)"
+      ricing)"
   a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configuration:
     label: A demonstration of how Hugo and Rosey work in CloudCannon. This site has
       extra setup so that we can enter translations via the CloudCannon GUI.
@@ -100,19 +93,7 @@ _inputs:
     label: Hugo Rosey Demo
     type: text
     comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=H\
-      ugo%20Rosey%20Demo) |
-      [Test](https://rugged-mandolin.cloudvent.net/test#:~:text=Hugo%20Rosey%20\
-      Demo)"
-  test-richardson-here:
-    label: Test richardson here
-    type: textarea
-    comment: "[Test](https://rugged-mandolin.cloudvent.net/test#:~:text=Test%20rich\
-      ardson%20here)"
-  this-is-a-new-hero-for-testing-purposes-changey-changed:
-    label: This is a new hero for testing purposes changey-changed
-    type: textarea
-    comment: "[Test](https://rugged-mandolin.cloudvent.net/test#:~:text=This%20is%2\
-      0a%20new%20hero%20for%20testing%20purposes%20changey-changed)"
+      ugo%20Rosey%20Demo)"
 Blog: Blog
 Contact: Contact
 Feature: Fonctionnalité
@@ -132,5 +113,3 @@ make-your-own-copy-of-this-repository-reference-it-or-use-it-as-a-template-to-ge
   CloudCannon à l'aide de Rosey.
 read-more: En savoir plus
 site-title: Démo Hugo Rosey
-test-richardson-here: ""
-this-is-a-new-hero-for-testing-purposes-changey-changed: ""
