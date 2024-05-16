@@ -1,0 +1,13 @@
+{{ $c := "button" }}
+
+<button class="{{ $c }}" style="background-color: {{ .button_color }};">
+  {{ if .button_text}}
+  <a
+    class="{{ $c }}__link"
+    href="{{ .path }}"
+    style="color: {{ .button_text_color }};"
+    data-rosey="{{ .button_text | anchorize }}">
+    {{ .button_text }}
+  </a>
+  {{ end}}
+</button>

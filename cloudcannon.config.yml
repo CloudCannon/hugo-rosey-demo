@@ -1,0 +1,62 @@
+paths:
+  data: data
+  collections: content
+  includes: layouts
+  layouts: layouts
+  static: static
+  uploads: static/images
+  source: ''
+  archetypes: archetypes
+  assets: assets
+  content: content
+  pages: content
+  publish: public
+  config: ''
+collections_config:
+  pages:
+    path: content
+    url: [slug]
+    output: true
+    filter: strict
+    icon: laptop_mac
+    _enabled_editors:
+      - visual
+    schemas:
+      default:
+        path: schemas/page.md
+    add_options:
+      - name: Add Page
+        editor: visual
+        schema: default
+  data:
+    path: data
+    output: false
+    icon: notes
+    disable_add: true
+    disable_add_folder: true
+    disable_file_actions: true
+  translations:
+    path: rosey/translations
+    output: false
+    icon: translate
+    disable_add: false
+    add_options:
+      - name: Add Language
+        icon: translate
+        href: cloudcannon:settings/build
+    disable_add_folder: true
+    disable_file_actions: true
+timezone: Etc/UTC
+_inputs:
+  seo:
+    options:
+      preview:
+        icon: manage_search
+  open_graph_type:
+    type: select
+    options:
+      values:
+        - website
+        - article
+  page_description:
+    type: textarea

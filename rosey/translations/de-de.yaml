@@ -1,0 +1,133 @@
+About: Um
+_inputs:
+  $:
+    type: object
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Untranslated
+          comment: Content to be translated
+          inputs:
+            - test-richardson-here
+            - this-is-a-new-hero-for-testing-purposes
+        - heading: Translated
+          comment: Content already translated
+          inputs:
+            - About
+            - Blog
+            - Contact
+            - Feature
+            - Home
+            - Pricing
+            - a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configuration
+            - hugo-rosey-demo
+            - keep-what-you-need-delete-the-rest-changed
+            - make-your-own-copy-of-this-repository-reference-it-or-use-it-as-a-template-to-get-up-and-running-with-translation-workflows-in-cloudcannon-using-rosey
+            - read-more
+            - site-title
+  About:
+    label: About
+    type: text
+    comment: "[Homepage](https://moving-mule.cloudvent.net/index.html#:~:text=About)
+      | [Test](https://moving-mule.cloudvent.net/test#:~:text=About)"
+  Blog:
+    label: Blog
+    type: text
+    comment: "[Homepage](https://moving-mule.cloudvent.net/index.html#:~:text=Blog)
+      | [Test](https://moving-mule.cloudvent.net/test#:~:text=Blog)"
+  Contact:
+    label: Contact
+    type: text
+    comment: "[Homepage](https://moving-mule.cloudvent.net/index.html#:~:text=Conta\
+      ct) | [Test](https://moving-mule.cloudvent.net/test#:~:text=Contact)"
+  Feature:
+    label: Feature
+    type: text
+    comment: "[Homepage](https://moving-mule.cloudvent.net/index.html#:~:text=Featu\
+      re) | [Test](https://moving-mule.cloudvent.net/test#:~:text=Feature)"
+  Home:
+    label: Home
+    type: text
+    comment: "[Homepage](https://moving-mule.cloudvent.net/index.html#:~:text=Home)
+      | [Test](https://moving-mule.cloudvent.net/test#:~:text=Home)"
+  Pricing:
+    label: Pricing
+    type: text
+    comment: "[Homepage](https://moving-mule.cloudvent.net/index.html#:~:text=Prici\
+      ng) | [Test](https://moving-mule.cloudvent.net/test#:~:text=Pricing)"
+  a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configuration:
+    label: A demonstration of how Hugo and Rosey work in CloudCannon. This site has
+      extra setup so that we can enter translations via the CloudCannon GUI.
+      Additional languages can be set in the environment variables in
+      CloudCannon’s build configuration.
+    type: textarea
+    comment: "[Homepage](https://moving-mule.cloudvent.net/index.html#:~:text=A%20d\
+      emonstration%20of%20how%20Hugo%20and%20Rosey%20work%20in%20CloudCannon.%2\
+      0This%20site%20has%20extra%20setup%20so%20that%20we%20can%20enter%20trans\
+      lations%20via%20the%20CloudCannon%20GUI.%20Additional%20languages%20can%2\
+      0be%20set%20in%20the%20environment%20variables%20in%20CloudCannon’s%20bui\
+      ld%20configuration.)"
+  hugo-rosey-demo:
+    label: Hugo Rosey Demo
+    type: text
+    comment: "[Homepage](https://moving-mule.cloudvent.net/index.html#:~:text=Hugo%\
+      20Rosey%20Demo)"
+  keep-what-you-need-delete-the-rest-changed:
+    label: Keep what you need. Delete the rest. CHANGED
+    type: textarea
+    comment: "[Homepage](https://moving-mule.cloudvent.net/index.html#:~:text=Keep%\
+      20what%20you%20need.%20Delete%20the%20rest.%20CHANGED)"
+  make-your-own-copy-of-this-repository-reference-it-or-use-it-as-a-template-to-get-up-and-running-with-translation-workflows-in-cloudcannon-using-rosey:
+    label: Make your own copy of this repository. Reference it or use it as a
+      template to get up and running with translation workflows in CloudCannon
+      using Rosey.
+    type: textarea
+    comment: "[Homepage](https://moving-mule.cloudvent.net/index.html#:~:text=Make%\
+      20your%20own%20copy%20of%20this%20repository.%20Reference%20it%20or%20use\
+      %20it%20as%20a%20template%20to%20get%20up%20and%20running%20with%20transl\
+      ation%20workflows%20in%20CloudCannon%20using%20Rosey.)"
+  read-more:
+    label: "\n    Read More\n  "
+    type: text
+    comment: |-
+      [Homepage](https://moving-mule.cloudvent.net/index.html#:~:text=
+      %20%20%20%20Read%20More
+      %20%20)
+  site-title:
+    label: Hugo Rosey Demo
+    type: text
+    comment: "[Homepage](https://moving-mule.cloudvent.net/index.html#:~:text=Hugo%\
+      20Rosey%20Demo) |
+      [Test](https://moving-mule.cloudvent.net/test#:~:text=Hugo%20Rosey%20Demo\
+      )"
+  test-richardson-here:
+    label: Test richardson here
+    type: textarea
+    comment: "[Test](https://moving-mule.cloudvent.net/test#:~:text=Test%20richards\
+      on%20here)"
+  this-is-a-new-hero-for-testing-purposes:
+    label: This is a new hero for testing purposes
+    type: textarea
+    comment: "[Test](https://moving-mule.cloudvent.net/test#:~:text=This%20is%20a%2\
+      0new%20hero%20for%20testing%20purposes)"
+Blog: Blog
+Contact: Kontakt
+Feature: Besonderheit
+Home: Heim
+Pricing: Preisgestaltung
+a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configuration:
+  Eine Demonstration, wie Hugo und Rosey in CloudCannon arbeiten. Diese Site
+  verfügt über eine zusätzliche Einrichtung, damit wir Übersetzungen über die
+  CloudCannon-GUI eingeben können. Zusätzliche Sprachen können in den
+  Umgebungsvariablen in der Build-Konfiguration von CloudCannon festgelegt
+  werden.
+hugo-rosey-demo: Hugo Rosey Demo
+keep-what-you-need-delete-the-rest-changed: Behalten Sie, was Sie brauchen. Den Rest löschen. GEÄNDERT
+make-your-own-copy-of-this-repository-reference-it-or-use-it-as-a-template-to-get-up-and-running-with-translation-workflows-in-cloudcannon-using-rosey:
+  Erstellen Sie Ihre eigene Kopie dieses Repositorys. Referenzieren Sie es oder
+  verwenden Sie es als Vorlage, um mit Rosey Übersetzungsworkflows in
+  CloudCannon zu starten.
+read-more: Mehr lesen
+site-title: Hugo Rosey Demo
+test-richardson-here: ""
+this-is-a-new-hero-for-testing-purposes: ""
