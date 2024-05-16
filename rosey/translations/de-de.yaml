@@ -28,87 +28,91 @@ _inputs:
   About:
     label: About
     type: text
-    comment: "[Homepage](https://adroit-pea.cloudvent.net/index.html#:~:text=About)
-      | [Test](https://adroit-pea.cloudvent.net/test#:~:text=About)"
+    comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=A\
+      bout) | [Test](https://rugged-mandolin.cloudvent.net/test#:~:text=About)"
   Blog:
     label: Blog
     type: text
-    comment: "[Homepage](https://adroit-pea.cloudvent.net/index.html#:~:text=Blog) |
-      [Test](https://adroit-pea.cloudvent.net/test#:~:text=Blog)"
+    comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=B\
+      log) | [Test](https://rugged-mandolin.cloudvent.net/test#:~:text=Blog)"
   Contact:
     label: Contact
     type: text
-    comment: "[Homepage](https://adroit-pea.cloudvent.net/index.html#:~:text=Contac\
-      t) | [Test](https://adroit-pea.cloudvent.net/test#:~:text=Contact)"
+    comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=C\
+      ontact) |
+      [Test](https://rugged-mandolin.cloudvent.net/test#:~:text=Contact)"
   Feature:
     label: Feature
     type: text
-    comment: "[Homepage](https://adroit-pea.cloudvent.net/index.html#:~:text=Featur\
-      e) | [Test](https://adroit-pea.cloudvent.net/test#:~:text=Feature)"
+    comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=F\
+      eature) |
+      [Test](https://rugged-mandolin.cloudvent.net/test#:~:text=Feature)"
   Home:
     label: Home
     type: text
-    comment: "[Homepage](https://adroit-pea.cloudvent.net/index.html#:~:text=Home) |
-      [Test](https://adroit-pea.cloudvent.net/test#:~:text=Home)"
+    comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=H\
+      ome) | [Test](https://rugged-mandolin.cloudvent.net/test#:~:text=Home)"
   Pricing:
     label: Pricing
     type: text
-    comment: "[Homepage](https://adroit-pea.cloudvent.net/index.html#:~:text=Pricin\
-      g) | [Test](https://adroit-pea.cloudvent.net/test#:~:text=Pricing)"
+    comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=P\
+      ricing) |
+      [Test](https://rugged-mandolin.cloudvent.net/test#:~:text=Pricing)"
   a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configuration:
     label: A demonstration of how Hugo and Rosey work in CloudCannon. This site has
       extra setup so that we can enter translations via the CloudCannon GUI.
       Additional languages can be set in the environment variables in
       CloudCannon’s build configuration.
     type: textarea
-    comment: "[Homepage](https://adroit-pea.cloudvent.net/index.html#:~:text=A%20de\
-      monstration%20of%20how%20Hugo%20and%20Rosey%20work%20in%20CloudCannon.%20\
-      This%20site%20has%20extra%20setup%20so%20that%20we%20can%20enter%20transl\
-      ations%20via%20the%20CloudCannon%20GUI.%20Additional%20languages%20can%20\
-      be%20set%20in%20the%20environment%20variables%20in%20CloudCannon’s%20buil\
-      d%20configuration.)"
+    comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=A\
+      %20demonstration%20of%20how%20Hugo%20and%20Rosey%20work%20in%20CloudCanno\
+      n.%20This%20site%20has%20extra%20setup%20so%20that%20we%20can%20enter%20t\
+      ranslations%20via%20the%20CloudCannon%20GUI.%20Additional%20languages%20c\
+      an%20be%20set%20in%20the%20environment%20variables%20in%20CloudCannon’s%2\
+      0build%20configuration.)"
   hugo-rosey-demo:
     label: Hugo Rosey Demo
     type: text
-    comment: "[Homepage](https://adroit-pea.cloudvent.net/index.html#:~:text=Hugo%2\
-      0Rosey%20Demo)"
+    comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=H\
+      ugo%20Rosey%20Demo)"
   keep-what-you-need-delete-the-rest-changed:
     label: Keep what you need. Delete the rest. CHANGED
     type: textarea
-    comment: "[Homepage](https://adroit-pea.cloudvent.net/index.html#:~:text=Keep%2\
-      0what%20you%20need.%20Delete%20the%20rest.%20CHANGED)"
+    comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=K\
+      eep%20what%20you%20need.%20Delete%20the%20rest.%20CHANGED)"
   make-your-own-copy-of-this-repository-reference-it-or-use-it-as-a-template-to-get-up-and-running-with-translation-workflows-in-cloudcannon-using-rosey:
     label: Make your own copy of this repository. Reference it or use it as a
       template to get up and running with translation workflows in CloudCannon
       using Rosey.
     type: textarea
-    comment: "[Homepage](https://adroit-pea.cloudvent.net/index.html#:~:text=Make%2\
-      0your%20own%20copy%20of%20this%20repository.%20Reference%20it%20or%20use%\
-      20it%20as%20a%20template%20to%20get%20up%20and%20running%20with%20transla\
-      tion%20workflows%20in%20CloudCannon%20using%20Rosey.)"
+    comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=M\
+      ake%20your%20own%20copy%20of%20this%20repository.%20Reference%20it%20or%2\
+      0use%20it%20as%20a%20template%20to%20get%20up%20and%20running%20with%20tr\
+      anslation%20workflows%20in%20CloudCannon%20using%20Rosey.)"
   read-more:
     label: "\n    Read More\n  "
     type: text
     comment: |-
-      [Homepage](https://adroit-pea.cloudvent.net/index.html#:~:text=
+      [Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=
       %20%20%20%20Read%20More
       %20%20)
   site-title:
     label: Hugo Rosey Demo
     type: text
-    comment: "[Homepage](https://adroit-pea.cloudvent.net/index.html#:~:text=Hugo%2\
-      0Rosey%20Demo) |
-      [Test](https://adroit-pea.cloudvent.net/test#:~:text=Hugo%20Rosey%20Demo)"
+    comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=H\
+      ugo%20Rosey%20Demo) |
+      [Test](https://rugged-mandolin.cloudvent.net/test#:~:text=Hugo%20Rosey%20\
+      Demo)"
   test-richardson-here:
     label: Test richardson here
     type: textarea
-    comment: "[Test](https://adroit-pea.cloudvent.net/test#:~:text=Test%20richardso\
-      n%20here)"
+    comment: "[Test](https://rugged-mandolin.cloudvent.net/test#:~:text=Test%20rich\
+      ardson%20here)"
   this-is-a-new-hero-for-testing-purposes-changey-changed:
     label: This is a new hero for testing purposes changey-changed
     type: textarea
-    comment: "[Test](https://adroit-pea.cloudvent.net/test#:~:text=This%20is%20a%20\
-      new%20hero%20for%20testing%20purposes%20changey-changed)"
+    comment: "[Test](https://rugged-mandolin.cloudvent.net/test#:~:text=This%20is%2\
+      0a%20new%20hero%20for%20testing%20purposes%20changey-changed)"
 Blog: Blog
 Contact: Kontakt
 Feature: Besonderheit
