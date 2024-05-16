@@ -26,7 +26,7 @@ content_blocks:
       button_text_color: '#ffffff'
       button_color: '#034ad8'
   - _bookshop_name: left-right
-    heading: Keep what you need. Delete the rest. CHANGED
+    heading: Keep what you need. Delete the rest.
     text: >-
       Make your own copy of this repository. Reference it or use it as a
       template to get up and running with translation workflows in CloudCannon
