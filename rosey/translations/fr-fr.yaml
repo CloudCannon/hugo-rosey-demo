@@ -9,7 +9,7 @@ _inputs:
           comment: Content to be translated
           inputs:
             - test-richardson-here
-            - this-is-a-new-hero-for-testing-purposes
+            - this-is-a-new-hero-for-testing-purposes-changey-changed
         - heading: Translated
           comment: Content already translated
           inputs:
@@ -101,11 +101,11 @@ _inputs:
     label: Test richardson here
     type: textarea
     comment: "[Test](http://localhost:1313/test#:~:text=Test%20richardson%20here)"
-  this-is-a-new-hero-for-testing-purposes:
-    label: This is a new hero for testing purposes
+  this-is-a-new-hero-for-testing-purposes-changey-changed:
+    label: This is a new hero for testing purposes changey-changed
     type: textarea
     comment: "[Test](http://localhost:1313/test#:~:text=This%20is%20a%20new%20hero%\
-      20for%20testing%20purposes)"
+      20for%20testing%20purposes%20changey-changed)"
 Blog: Blog
 Contact: Contact
 Feature: Fonctionnalité
@@ -126,4 +126,4 @@ make-your-own-copy-of-this-repository-reference-it-or-use-it-as-a-template-to-ge
 read-more: En savoir plus
 site-title: Démo Hugo Rosey
 test-richardson-here: ""
-this-is-a-new-hero-for-testing-purposes: ""
+this-is-a-new-hero-for-testing-purposes-changey-changed: ""
