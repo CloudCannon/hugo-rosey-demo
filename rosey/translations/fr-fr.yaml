@@ -22,7 +22,6 @@ _inputs:
             - hugo-rosey-demo
             - keep-what-you-need-delete-the-rest
             - read-more
-            - site-title
   a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configuration:
     label: A demonstration of how Hugo and Rosey work in CloudCannon. This site has
       extra setup so that we can enter translations via the CloudCannon GUI.
@@ -63,14 +62,8 @@ _inputs:
     type: text
     comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=R\
       ead%20More)"
-  site-title:
-    label: Hugo Rosey Demo
-    type: text
-    comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=H\
-      ugo%20Rosey%20Demo)"
 hugo-rosey-demo: Démo Hugo Rosey
 keep-what-you-need-delete-the-rest: Gardez ce dont vous avez besoin. Supprimez le reste.
 make-your-own-copy-of-this-repository-reference-it-or-use-it-as-a-template-to-get-up-and-running-with-translation-workflows-in-cloudcannon-using-rosey: ""
 odCqOyfzfx8+0x9yxU7KiHRnYpNBFRibhMjQTdF6UNI: ""
 read-more: En savoir plus
-site-title: Démo Hugo Rosey

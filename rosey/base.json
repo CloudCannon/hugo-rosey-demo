@@ -50,16 +50,6 @@
         "index.html": 2
       },
       "total": 2
-    },
-    "site-title": {
-      "original": "Hugo Rosey Demo",
-      "value": null,
-      "pages": {
-        "categories/index.html": 1,
-        "index.html": 1,
-        "tags/index.html": 1
-      },
-      "total": 3
     }
   }
 }
