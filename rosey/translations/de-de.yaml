@@ -1,9 +1,4 @@
-a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configuration:
-  Eine Demonstration, wie Hugo und Rosey in CloudCannon arbeiten. Diese Site
-  verfügt über eine zusätzliche Einrichtung, damit wir Übersetzungen über die
-  CloudCannon-GUI eingeben können. Zusätzliche Sprachen können in den
-  Umgebungsvariablen in der Build-Konfiguration von CloudCannon festgelegt
-  werden.
+a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configurationa-new-test-paragraph: ""
 _inputs:
   $:
     type: object
@@ -13,27 +8,19 @@ _inputs:
         - heading: Untranslated
           comment: Content to be translated
           inputs:
+            - a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configurationa-new-test-paragraph
             - make-your-own-copy-of-this-repository-reference-it-or-use-it-as-a-template-to-get-up-and-running-with-translation-workflows-in-cloudcannon-using-rosey
             - odCqOyfzfx8+0x9yxU7KiHRnYpNBFRibhMjQTdF6UNI
         - heading: Translated
           comment: Content already translated
           inputs:
-            - a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configuration
             - hugo-rosey-demo
             - keep-what-you-need-delete-the-rest
             - read-more
-  a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configuration:
-    label: A demonstration of how Hugo and Rosey work in CloudCannon. This site has
-      extra setup so that we can enter translations via the CloudCannon GUI.
-      Additional languages can be set in the environment variables in
-      CloudCannon’s build configuration.
-    type: textarea
-    comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=A\
-      %20demonstration%20of%20how%20Hugo%20and%20Rosey%20work%20in%20CloudCanno\
-      n.%20This%20site%20has%20extra%20setup%20so%20that%20we%20can%20enter%20t\
-      ranslations%20via%20the%20CloudCannon%20GUI.%20Additional%20languages%20c\
-      an%20be%20set%20in%20the%20environment%20variables%20in%20CloudCannon’s%2\
-      0build%20configuration.)"
+  a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configurationa-new-test-paragraph:
+    label: ""
+    type: text
+    comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=)"
   hugo-rosey-demo:
     label: Hugo Rosey Demo
     type: text

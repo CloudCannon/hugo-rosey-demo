@@ -1,8 +1,8 @@
 {
   "version": 2,
   "keys": {
-    "a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configuration": {
-      "original": "A demonstration of how Hugo and Rosey work in CloudCannon. This site has extra setup so that we can enter translations via the CloudCannon GUI. Additional languages can be set in the environment variables in CloudCannon’s build configuration.",
+    "a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configurationa-new-test-paragraph": {
+      "original": "",
       "value": null,
       "pages": {
         "index.html": 1
