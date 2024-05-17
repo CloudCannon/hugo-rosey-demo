@@ -31,6 +31,9 @@ content_blocks:
       Make your own copy of this repository. Reference it or use it as a
       template to get up and running with translation workflows in CloudCannon
       using Rosey.
+
+
+      Change this.
     button:
       _bookshop_name: global/button
       path: https://github.com/tomrcc/hugo-rosey-demo
