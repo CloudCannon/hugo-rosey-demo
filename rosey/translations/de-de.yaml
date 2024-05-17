@@ -7,7 +7,8 @@ _inputs:
       groups:
         - heading: Untranslated
           comment: Content to be translated
-          inputs: []
+          inputs:
+            - make-your-own-copy-of-this-repository-reference-it-or-use-it-as-a-template-to-get-up-and-running-with-translation-workflows-in-cloudcannon-using-roseychange-this
         - heading: Translated
           comment: Content already translated
           inputs:
@@ -20,7 +21,6 @@ _inputs:
             - a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configuration
             - hugo-rosey-demo
             - keep-what-you-need-delete-the-rest
-            - make-your-own-copy-of-this-repository-reference-it-or-use-it-as-a-template-to-get-up-and-running-with-translation-workflows-in-cloudcannon-using-rosey
             - read-more
             - site-title
   About:
@@ -73,15 +73,20 @@ _inputs:
     type: textarea
     comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=K\
       eep%20what%20you%20need.%20Delete%20the%20rest.)"
-  make-your-own-copy-of-this-repository-reference-it-or-use-it-as-a-template-to-get-up-and-running-with-translation-workflows-in-cloudcannon-using-rosey:
-    label: Make your own copy of this repository. Reference it or use it as a
+  make-your-own-copy-of-this-repository-reference-it-or-use-it-as-a-template-to-get-up-and-running-with-translation-workflows-in-cloudcannon-using-roseychange-this:
+    label: >-
+      Make your own copy of this repository. Reference it or use it as a
       template to get up and running with translation workflows in CloudCannon
       using Rosey.
+
+
+      Change this.
     type: textarea
-    comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=M\
-      ake%20your%20own%20copy%20of%20this%20repository.%20Reference%20it%20or%2\
-      0use%20it%20as%20a%20template%20to%20get%20up%20and%20running%20with%20tr\
-      anslation%20workflows%20in%20CloudCannon%20using%20Rosey.)"
+    comment: >-
+      [Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=Make%20your%20own%20copy%20of%20this%20repository.%20Reference%20it%20or%20use%20it%20as%20a%20template%20to%20get%20up%20and%20running%20with%20translation%20workflows%20in%20CloudCannon%20using%20Rosey.
+
+
+      Change%20this.)
   read-more:
     label: Read More
     type: text
@@ -105,9 +110,6 @@ a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-se
   werden.
 hugo-rosey-demo: Hugo Rosey Demo
 keep-what-you-need-delete-the-rest: Behalten Sie, was Sie brauchen. Den Rest löschen.
-make-your-own-copy-of-this-repository-reference-it-or-use-it-as-a-template-to-get-up-and-running-with-translation-workflows-in-cloudcannon-using-rosey:
-  Erstellen Sie Ihre eigene Kopie dieses Repositorys. Referenzieren Sie es oder
-  verwenden Sie es als Vorlage, um mit Rosey Übersetzungsworkflows in
-  CloudCannon zu starten.
+make-your-own-copy-of-this-repository-reference-it-or-use-it-as-a-template-to-get-up-and-running-with-translation-workflows-in-cloudcannon-using-roseychange-this: ""
 read-more: Mehr lesen
 site-title: Hugo Rosey Demo

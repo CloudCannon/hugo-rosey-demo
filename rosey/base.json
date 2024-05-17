@@ -85,8 +85,8 @@
       },
       "total": 1
     },
-    "make-your-own-copy-of-this-repository-reference-it-or-use-it-as-a-template-to-get-up-and-running-with-translation-workflows-in-cloudcannon-using-rosey": {
-      "original": "Make your own copy of this repository. Reference it or use it as a template to get up and running with translation workflows in CloudCannon using Rosey.",
+    "make-your-own-copy-of-this-repository-reference-it-or-use-it-as-a-template-to-get-up-and-running-with-translation-workflows-in-cloudcannon-using-roseychange-this": {
+      "original": "Make your own copy of this repository. Reference it or use it as a template to get up and running with translation workflows in CloudCannon using Rosey.\n\nChange this.",
       "value": null,
       "pages": {
         "index.html": 1
