@@ -11,3 +11,8 @@ markup:
     renderer:
       hardWraps: true
       unsafe: false
+
+security:
+  funcs:
+    getenv:
+      - ^LOCALES$
