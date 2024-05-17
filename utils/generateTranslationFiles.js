@@ -1,9 +1,23 @@
 // TODO: Figure out why highlight doesn't work in markdown links?
 // TODO: Why does changing
 
+const markdownit = require('markdown-it');
+const {
+  NodeHtmlMarkdown,
+  NodeHtmlMarkdownOptions,
+} = require('node-html-markdown');
+
 const fs = require('file-system');
 const YAML = require('yaml');
 const slugify = require('slugify');
+const md = markdownit({
+  html: true,
+});
+const nhm = new NodeHtmlMarkdown(
+  /* options (optional) */ {},
+  /* customTransformers (optional) */ undefined,
+  /* customCodeBlockTranslators (optional) */ undefined
+);
 
 const inputFilePath = './rosey/base.json';
 const translationFilesDirPath = './rosey/translations';
@@ -38,9 +52,12 @@ async function main(locale) {
     await fs.writeFileSync(translationFilePath, '_inputs: {}');
   }
 
+  console.log(inputFileData);
   for (const inputKey in inputFileData) {
     const inputTranslationObj = inputFileData[inputKey];
-    const originalPhrase = inputTranslationObj.original.trim();
+    const originalPhrase = nhm.translate(inputTranslationObj.original.trim());
+    // console.log(inputTranslationObj);
+    // console.log(nhm.translate(originalPhrase));
 
     // Only add the key to our output data if it still exists in base.json
     // If entry no longer exists in base.json we don't add it
@@ -131,7 +148,7 @@ async function main(locale) {
     }
   }
 
-  console.log(cleanedOutputFileData);
+  // console.log(cleanedOutputFileData);
   await fs.writeFileSync(
     translationFilePath,
     YAML.stringify(cleanedOutputFileData),
