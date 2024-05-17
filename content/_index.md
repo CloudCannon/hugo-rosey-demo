@@ -19,6 +19,9 @@ content_blocks:
       extra setup so that we can enter translations via the CloudCannon GUI.
       Additional languages can be set in the environment variables in
       CloudCannon's build configuration.
+
+
+      A new test paragraph
     button:
       _bookshop_name: global/button
       path: https://rosey.app/
