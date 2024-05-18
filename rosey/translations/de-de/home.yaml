@@ -11,6 +11,7 @@ _inputs:
           inputs:
             - hugo-rosey-demo
             - keep-what-you-need-delete-the-rest
+            - new-heading
             - read-more
         - heading: Translated
           comment: "[Already translated](https://rugged-mandolin.cloudvent.net/)"
@@ -56,6 +57,12 @@ _inputs:
 
       Another new paragraph | [See
       Context](https://rugged-mandolin.cloudvent.net/#:~:text=A%20demonstration%20of,Another%20new%20paragraph)
+  new-heading:
+    label: Translation (de-de)
+    hidden: false
+    type: text
+    comment: New heading | [See
+      Context](https://rugged-mandolin.cloudvent.net/#:~:text=New%20heading)
   read-more:
     label: Translation (de-de)
     hidden: false
@@ -77,4 +84,5 @@ markdown:a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has
 
   Ein neuer Absatz in german with some **bold** and *italic* formatting to see
   if it comes out in locales value, and then on to the live site.
+new-heading: ""
 read-more: ""
