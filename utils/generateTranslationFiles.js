@@ -55,7 +55,7 @@ async function main(locale) {
     const page = pages[item];
     // Format the page name
     const pageName = page
-      .replace('/index.html', '/')
+      .replace('/index.html', '')
       .replace('.html', '')
       .replace('index', 'home');
 
