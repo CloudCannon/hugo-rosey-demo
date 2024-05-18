@@ -144,12 +144,12 @@ async function main(locale) {
               groups: [
                 {
                   heading: 'Untranslated',
-                  comment: 'Content to be translated',
+                  comment: `[To be translated](${baseURL}${pageString})`,
                   inputs: [],
                 },
                 {
                   heading: 'Translated',
-                  comment: 'Content already translated',
+                  comment: `[Already translated](${baseURL}${pageString})`,
                   inputs: [],
                 },
               ],
@@ -162,10 +162,10 @@ async function main(locale) {
         const markdownOriginal = nhm.translate(originalPhrase);
 
         cleanedOutputFileData['_inputs'][inputKey] = {
-          label: `${locale} Translation`,
+          label: `Translation (${locale})`,
           hidden: originalPhrase === '' ? true : false,
           type: inputType,
-          comment: `${markdownOriginal} | ${locationString} | `,
+          comment: `${markdownOriginal} | ${locationString}`,
         };
 
         // Add each entry to page object group depending on whether they are translated or not
