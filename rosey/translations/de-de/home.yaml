@@ -11,12 +11,12 @@ _inputs:
           inputs:
             - hugo-rosey-demo
             - keep-what-you-need-delete-the-rest
-            - markdown:a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configurationa-new-test-paragraph-with-some-markdown-to-uputu-the-demo-through-its-spacess-testsa-line-breakanother-new-paragraph
             - read-more
         - heading: Translated
           comment: "[Already translated](https://rugged-mandolin.cloudvent.net/)"
           inputs:
             - make-your-own-copy-of-this-repository-reference-it-or-use-it-as-a-template-to-get-up-and-running-with-translation-workflows-in-cloudcannon-using-rosey
+            - markdown:a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configurationa-new-test-paragraph-with-some-markdown-to-uputu-the-demo-through-its-spacess-testsa-line-breakanother-new-paragraph
   hugo-rosey-demo:
     label: Translation (de-de)
     hidden: false
@@ -66,6 +66,15 @@ keep-what-you-need-delete-the-rest: ""
 make-your-own-copy-of-this-repository-reference-it-or-use-it-as-a-template-to-get-up-and-running-with-translation-workflows-in-cloudcannon-using-rosey:
   Erstellen Sie Ihre eigene Kopie dieses Repositorys. Referenzieren Sie es oder
   verwenden Sie es als Vorlage, um mit Rosey Übersetzungsworkflows in
-  CloudCannon zu starten. | Siehe Kontext
-markdown:a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configurationa-new-test-paragraph-with-some-markdown-to-uputu-the-demo-through-its-spacess-testsa-line-breakanother-new-paragraph: ""
+  CloudCannon zu starten.
+markdown:a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configurationa-new-test-paragraph-with-some-markdown-to-uputu-the-demo-through-its-spacess-testsa-line-breakanother-new-paragraph: >-
+  Eine Demonstration, wie Hugo und Rosey in CloudCannon arbeiten. Diese Site
+  verfügt über eine zusätzliche Einrichtung, damit wir Übersetzungen über die
+  CloudCannon-GUI eingeben können. Zusätzliche Sprachen können in den
+  Umgebungsvariablen in der Build-Konfiguration von CloudCannon festgelegt
+  werden.
+
+
+  Ein neuer Absatz in german with some **bold** and *italic* formatting to see
+  if it comes out in locales value, and then on to the live site.
 read-more: ""
