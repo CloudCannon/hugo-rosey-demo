@@ -17,7 +17,7 @@ _inputs:
           comment: Content already translated
           inputs: []
   a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configurationa-new-test-paragraph-with-some-markdown-to-uputu-the-demo-through-its-spacess-testsa-line-breakanother-new-paragraph:
-    label: ""
+    label: de-de Translation
     hidden: false
     type: textarea
     comment: >-
@@ -36,19 +36,19 @@ _inputs:
 
       Another new paragraph
   hugo-rosey-demo:
-    label: ""
+    label: de-de Translation
     hidden: false
     type: text
     comment: "[Preview](https://rugged-mandolin.cloudvent.net/#:~:text=Hugo%20Rosey\
       %20Demo) | Hugo Rosey Demo"
   keep-what-you-need-delete-the-rest:
-    label: ""
+    label: de-de Translation
     hidden: false
     type: textarea
     comment: "[Preview](https://rugged-mandolin.cloudvent.net/#:~:text=Keep%20what%\
       20you,Delete%20the%20rest.) | Keep what you need. Delete the rest."
   make-your-own-copy-of-this-repository-reference-it-or-use-it-as-a-template-to-get-up-and-running-with-translation-workflows-in-cloudcannon-using-rosey:
-    label: ""
+    label: de-de Translation
     hidden: false
     type: textarea
     comment: "[Preview](https://rugged-mandolin.cloudvent.net/#:~:text=Make%20your%\
@@ -56,7 +56,7 @@ _inputs:
       repository. Reference it or use it as a template to get up and running
       with translation workflows in CloudCannon using Rosey."
   read-more:
-    label: ""
+    label: de-de Translation
     hidden: false
     type: text
     comment: "[Preview](https://rugged-mandolin.cloudvent.net/#:~:text=Read%20More)
