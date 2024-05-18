@@ -55,7 +55,7 @@ async function main(locale) {
   console.log(inputFileData);
   for (const inputKey in inputFileData) {
     const inputTranslationObj = inputFileData[inputKey];
-    const originalPhrase = nhm.translate(inputTranslationObj.original.trim());
+    const originalPhrase = inputTranslationObj.original.trim();
     // console.log(inputTranslationObj);
     // console.log(nhm.translate(originalPhrase));
 
@@ -91,7 +91,7 @@ async function main(locale) {
       return `[${pageNameCapitalised}](${baseURL}${pagePath}#:~:text=${originalPhrase.replaceAll(
         ' ',
         '%20'
-      )})`;
+      ).replaceAll('<p>', '').replaceAll('</p>', '').replaceAll('\n', '')})`;
     });
 
     // Create the inputs obj if there is none
@@ -125,7 +125,7 @@ async function main(locale) {
     const inputType = originalPhrase.length < 20 ? 'text' : 'textarea';
 
     cleanedOutputFileData['_inputs'][inputKey] = {
-      label: originalPhrase,
+      label: nhm.translate(originalPhrase),
       type: inputType,
       comment: translationLocations.join(' | '),
     };
