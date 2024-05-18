@@ -27,11 +27,12 @@ _inputs:
 
       A new test paragraph
     type: textarea
-    comment: >-
-      [Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=A%20demonstration%20of%20how%20Hugo%20and%20Rosey%20work%20in%20CloudCannon.%20This%20site%20has%20extra%20setup%20so%20that%20we%20can%20enter%20translations%20via%20the%20CloudCannon%20GUI.%20Additional%20languages%20can%20be%20set%20in%20the%20environment%20variables%20in%20CloudCannon’s%20build%20configuration.
-
-
-      A%20new%20test%20paragraph)
+    comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=A\
+      %20demonstration%20of%20how%20Hugo%20and%20Rosey%20work%20in%20CloudCanno\
+      n.%20This%20site%20has%20extra%20setup%20so%20that%20we%20can%20enter%20t\
+      ranslations%20via%20the%20CloudCannon%20GUI.%20Additional%20languages%20c\
+      an%20be%20set%20in%20the%20environment%20variables%20in%20CloudCannon’s%2\
+      0build%20configuration.A%20new%20test%20paragraph)"
   hugo-rosey-demo:
     label: Hugo Rosey Demo
     type: text
