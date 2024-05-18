@@ -75,9 +75,7 @@
           x-transition>
           {{ range .items }} {{ $url := .link }}
           <li>
-            <a class="nav-link" href="{{ .link }}"
-              >{{ .text }}</a
-            >
+            <a class="nav-link" href="{{ .link }}">{{ .text }}</a>
           </li>
           {{ end }}
         </ul>
@@ -85,20 +83,25 @@
         <ul class="{{ $c }}__nav-list">
           {{ range .items }} {{ $url := .link }}
           <li class="{{ $c }}__nav-list-item">
-            <a class="nav-link" href="{{ .link }}"
-              >{{ .text }}</a
-            >
+            <a class="nav-link" href="{{ .link }}">{{ .text }}</a>
           </li>
           {{ end }}
         </ul>
+        <p>Languages</p>
         <ul>
-          <p>Languages</p>
-          {{ $LOCALES := getenv "LOCALES" | default "es-es" }}
-
-          <li>{{ getenv "LOCALES" }}</li>
-
-          <li class="text-black">{{ $.Page }}</li>
+          {{ if eq hugo.Environment "production"}}
+          {{ $locales := getenv "LOCALES" }}
+            {{ with $locales }}
+              <li>{{ . }}</li>
+            {{ end }}
+          {{ else }}
+            {{ $locales := "fr-fr,de-de" }}
+            {{ with $locales }}
+              <li>{{ . }}</li>
+            {{ end }}
+          {{ end }}
         </ul>
+        <span class="text-black">{{ $.Page }}</span>
       </div>
     </div>
   </nav>
