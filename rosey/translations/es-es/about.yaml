@@ -1,4 +1,4 @@
-hugo-rosey-demo: ""
+hugo-rosey-demo: Demostración de Hugo Rosey
 _inputs:
   $:
     type: object
@@ -9,14 +9,14 @@ _inputs:
         - heading: Untranslated
           comment: "[To be translated](https://rugged-mandolin.cloudvent.net/about/)"
           inputs:
-            - hugo-rosey-demo
             - its-all-about-about-baby
-            - markdown:the-about-page
             - read-more
         - heading: Translated
           comment: "[Already translated](https://rugged-mandolin.cloudvent.net/about/)"
           inputs:
+            - hugo-rosey-demo
             - keep-what-you-need-delete-the-rest
+            - markdown:the-about-page
   hugo-rosey-demo:
     label: Translation (es-es)
     hidden: false
@@ -62,5 +62,5 @@ _inputs:
       Context](https://rugged-mandolin.cloudvent.net/about/#:~:text=Read%20More)
 its-all-about-about-baby: ""
 keep-what-you-need-delete-the-rest: Conserva lo que necesitas. eliminar el resto.
-markdown:the-about-page: ""
+markdown:the-about-page: La página acerca de
 read-more: ""
