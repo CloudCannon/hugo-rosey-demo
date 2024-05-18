@@ -158,13 +158,13 @@ async function main(locale) {
 
         // Add each entry to our _inputs obj
         const inputType = originalPhrase.length < 20 ? 'text' : 'textarea';
-        const label = nhm.translate(originalPhrase);
+        const markdownOriginal = nhm.translate(originalPhrase);
 
         cleanedOutputFileData['_inputs'][inputKey] = {
-          label: '',
+          label: `${locale} Translation`,
           hidden: originalPhrase === '' ? true : false,
           type: inputType,
-          comment: `${locationString} | ${label}`,
+          comment: `${locationString} | ${markdownOriginal}`,
         };
 
         // Add each entry to page object group depending on whether they are translated or not
