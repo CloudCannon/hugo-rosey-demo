@@ -22,18 +22,21 @@ _inputs:
     label: Translation (es-es)
     hidden: false
     type: text
+    options: {}
     comment: Hugo Rosey Demo | [See
       Context](https://rugged-mandolin.cloudvent.net/#:~:text=Hugo%20Rosey%20Demo)
   keep-what-you-need-delete-the-rest:
     label: Translation (es-es)
     hidden: false
     type: textarea
+    options: {}
     comment: Keep what you need. Delete the rest. | [See
       Context](https://rugged-mandolin.cloudvent.net/#:~:text=Keep%20what%20you,Delete%20the%20rest.)
   make-your-own-copy-of-this-repository-reference-it-or-use-it-as-a-template-to-get-up-and-running-with-translation-workflows-in-cloudcannon-using-rosey:
     label: Translation (es-es)
     hidden: false
     type: textarea
+    options: {}
     comment: Make your own copy of this repository. Reference it or use it as a
       template to get up and running with translation workflows in CloudCannon
       using Rosey. | [See
@@ -42,6 +45,15 @@ _inputs:
     label: Translation (es-es)
     hidden: false
     type: markdown
+    options:
+      bold: true
+      italic: true
+      strike: true
+      underline: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
     comment: >-
       A demonstration of how Hugo and Rosey work in CloudCannon. This site has
       extra setup so that we can enter translations via the CloudCannon GUI.
@@ -61,12 +73,14 @@ _inputs:
     label: Translation (es-es)
     hidden: false
     type: text
+    options: {}
     comment: New heading | [See
       Context](https://rugged-mandolin.cloudvent.net/#:~:text=New%20heading)
   read-more:
     label: Translation (es-es)
     hidden: false
     type: text
+    options: {}
     comment: Read More | [See
       Context](https://rugged-mandolin.cloudvent.net/#:~:text=Read%20More)
 keep-what-you-need-delete-the-rest: ""
