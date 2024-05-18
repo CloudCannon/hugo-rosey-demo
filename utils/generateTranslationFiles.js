@@ -126,8 +126,8 @@ async function main(locale) {
         const pageString = page.replace('.html', '').replace('index', '');
         const locationString =
           originalPhraseArray.length > urlHighlighterWordLength
-            ? `[Preview](${baseURL}${pageString}#:~:text=${startHighlight},${endHighlight})`
-            : `[Preview](${baseURL}${pageString}#:~:text=${encodedOriginalPhrase})`;
+            ? `[See Context](${baseURL}${pageString}#:~:text=${startHighlight},${endHighlight})`
+            : `[See Context](${baseURL}${pageString}#:~:text=${encodedOriginalPhrase})`;
 
         // Create the inputs obj if there is none
         if (!cleanedOutputFileData['_inputs']) {
@@ -138,6 +138,7 @@ async function main(locale) {
         if (!cleanedOutputFileData['_inputs']['$']) {
           cleanedOutputFileData['_inputs']['$'] = {
             type: 'object',
+            comment: `[Go to Page](${baseURL}${pageString})`,
             options: {
               place_groups_below: false,
               groups: [
@@ -164,7 +165,7 @@ async function main(locale) {
           label: `${locale} Translation`,
           hidden: originalPhrase === '' ? true : false,
           type: inputType,
-          comment: `${locationString} | ${markdownOriginal}`,
+          comment: `${markdownOriginal} | ${locationString} | `,
         };
 
         // Add each entry to page object group depending on whether they are translated or not
