@@ -161,11 +161,22 @@ async function main(locale) {
         const markdownTextInput = inputKey.slice(0, 10).includes('markdown:')
         const inputType = markdownTextInput ? 'markdown' : originalPhrase.length < 20 ? 'text' : 'textarea';
         const markdownOriginal = nhm.translate(originalPhrase);
+        const options = markdownTextInput ? {
+          bold: true,
+          italic: true,
+          strike: true,
+          underline: true,
+          link: true,
+          undo: true,
+          redo: true,
+          removeformat: true
+        } : {};
 
         cleanedOutputFileData['_inputs'][inputKey] = {
           label: `Translation (${locale})`,
           hidden: originalPhrase === '' ? true : false,
           type: inputType,
+          options: options,
           comment: `${markdownOriginal} | ${locationString}`,
         };
 
