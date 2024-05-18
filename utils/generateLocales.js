@@ -1,51 +1,56 @@
 const fs = require('file-system');
 const YAML = require('yaml');
 
-let translationsDirPath = './rosey/translations';
-let localesDirPath = './rosey/locales';
-let locales = process.env.LOCALES.toLowerCase().split(',');
-// let locales = ['es-es'];
-let localesFileData = {};
-let translationsFileData = {};
+const translationsDirPath = './rosey/translations';
+const localesDirPath = './rosey/locales';
+
+const locales = process.env.LOCALES?.toLowerCase().split(',') || [
+  'es-es',
+  'de-de',
+  'fr-fr',
+];
 
 async function main(locale) {
-  // Read the translation files and the locales files
-  let localePath = localesDirPath + '/' + locale + '.json';
-  let translationsPath = translationsDirPath + '/' + locale + '.yaml';
-  if (fs.existsSync(translationsPath)) {
-    translationsFileData = YAML.parse(
-      fs.readFileSync(translationsPath, 'utf-8')
-    );
-  } else {
-    console.log(`${translationsPath} does not exist`);
-  }
-  if (fs.existsSync(localePath)) {
-    // localesFileData = JSON.parse(fs.readFileSync(localePath));
-    localesFileData = {};
-  } else {
-    console.log(`${localePath} does not exist, creating one now`);
-    fs.writeFileSync(localePath, JSON.stringify({}));
-  }
+  const baseFile = await fs.readFileSync('./rosey/base.json');
+  const roseyJSON = JSON.parse(baseFile).keys;
+  let translationsFileData = [];
+  let localeData = {};
+  const localePath = localesDirPath + '/' + locale + '.json';
+  const translationsLocalePath = translationsDirPath + '/' + locale + '/';
 
-  // Add each obj to our locales data, excluding '_inputs' object.
-  for (const inputKey in translationsFileData) {
-    const translationEntry = translationsFileData[inputKey];
-    const translationEntryInputData = translationsFileData['_inputs'];
+  const translationsFiles = await fs.readdirSync(translationsLocalePath);
+  for (item in translationsFiles) {
+    const file = translationsFiles[item];
+    const translationsPath = translationsLocalePath + file;
 
-    // If obj doesn't exist in our locales file or has a blank value, and isn't the inputs object, add it with the translated value
-    if (inputKey !== '_inputs') {
-      localesFileData[inputKey] = {
-        original: translationEntryInputData[inputKey]?.label,
-        value:
-          translationEntry == ''
-            ? translationEntryInputData[inputKey]?.label
-            : translationEntry,
-      };
+    if (fs.existsSync(translationsPath)) {
+      const data = YAML.parse(fs.readFileSync(translationsPath, 'utf-8'));
+      translationsFileData.push(data);
+    } else {
+      console.log(`${translationsPath} does not exist`);
+    }
+    // // Add each obj to our locales data, excluding '_inputs' object.
+    for (item in translationsFileData) {
+      const page = translationsFileData[item];
+
+      for (const key in page) {
+        const translationEntry = page[key];
+
+        // If obj doesn't exist in our locales file or has a blank value, and isn't the inputs object, add it with the translated value
+        if (key !== '_inputs') {
+          localeData[key] = {
+            original: roseyJSON[key]?.original,
+            value:
+              translationEntry == ''
+                ? roseyJSON[key]?.original
+                : translationEntry,
+          };
+        }
+      }
     }
   }
-
   // Write locales data
-  fs.writeFile(localePath, JSON.stringify(localesFileData), (err) => {
+  fs.writeFileSync(localePath, JSON.stringify(localeData), (err) => {
     if (err) throw err;
     console.log(localePath + ' updated succesfully');
   });
