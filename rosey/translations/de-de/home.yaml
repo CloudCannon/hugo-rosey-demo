@@ -17,6 +17,7 @@ _inputs:
           inputs:
             - make-your-own-copy-of-this-repository-reference-it-or-use-it-as-a-template-to-get-up-and-running-with-translation-workflows-in-cloudcannon-using-rosey
             - markdown:a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configurationa-new-test-paragraph-with-some-markdown-to-uputu-the-demo-through-its-spacess-testsa-line-breakanother-new-paragraph
+            - new-heading
   hugo-rosey-demo:
     label: Translation (de-de)
     hidden: false
@@ -56,6 +57,12 @@ _inputs:
 
       Another new paragraph | [See
       Context](https://rugged-mandolin.cloudvent.net/#:~:text=A%20demonstration%20of,Another%20new%20paragraph)
+  new-heading:
+    label: Translation (de-de)
+    hidden: false
+    type: text
+    comment: New heading | [See
+      Context](https://rugged-mandolin.cloudvent.net/#:~:text=New%20heading)
   read-more:
     label: Translation (de-de)
     hidden: false
@@ -77,4 +84,5 @@ markdown:a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has
 
   Ein neuer Absatz in german with some **bold** and *italic* formatting to see
   if it comes out in locales value, and then on to the live site.
+new-heading: New heading in german for the demo
 read-more: ""

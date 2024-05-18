@@ -48,4 +48,10 @@ content_blocks:
       button_color: '#034ad8'
     image: /images/transparent-bg/undraw-hello.svg
     image_alt:
+  - _bookshop_name: left-right
+    heading: New heading
+    text: ''
+    button:
+    image:
+    image_alt:
 ---

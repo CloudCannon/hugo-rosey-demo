@@ -51,6 +51,14 @@
       },
       "total": 1
     },
+    "new-heading": {
+      "original": "New heading",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
     "read-more": {
       "original": "\n    Read More\n  ",
       "value": null,
