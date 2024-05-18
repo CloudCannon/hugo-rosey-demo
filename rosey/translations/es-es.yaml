@@ -28,7 +28,7 @@ _inputs:
     hidden: false
     type: textarea
     comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=A\
-      %20demonstration%20o,w%20test%20paragraph)"
+      %20demonstration%20of,)"
   hugo-rosey-demo:
     label: Hugo Rosey Demo
     hidden: false
@@ -40,7 +40,7 @@ _inputs:
     hidden: false
     type: textarea
     comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=K\
-      eep%20what%20you%20need.%20,ed.%20Delete%20the%20rest.)"
+      eep%20what%20you,)"
   make-your-own-copy-of-this-repository-reference-it-or-use-it-as-a-template-to-get-up-and-running-with-translation-workflows-in-cloudcannon-using-rosey:
     label: Make your own copy of this repository. Reference it or use it as a
       template to get up and running with translation workflows in CloudCannon
@@ -48,7 +48,7 @@ _inputs:
     hidden: false
     type: textarea
     comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=M\
-      ake%20your%20own%20copy%20o,dCannon%20using%20Rosey.)"
+      ake%20your%20own,)"
   read-more:
     label: Read More
     hidden: false
