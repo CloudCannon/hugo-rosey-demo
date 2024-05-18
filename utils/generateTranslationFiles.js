@@ -88,10 +88,7 @@ async function main(locale) {
           : page.replace('/index.html', '').replaceAll('-', ' ');
       const pageNameCapitalised = pageName[0].toUpperCase() + pageName.slice(1);
       const pagePath = page.replace('/index.html', '');
-      return `[${pageNameCapitalised}](${baseURL}${pagePath}#:~:text=${originalPhrase.replaceAll(
-        ' ',
-        '%20'
-      ).replaceAll('<p>', '').replaceAll('</p>', '').replaceAll('\n', '')})`;
+      return `[${pageNameCapitalised}](${baseURL}${pagePath}#:~:text=${encodeURI(originalPhrase.replaceAll('<p>', '').replaceAll('</p>', ''))})`;
     });
 
     // Create the inputs obj if there is none

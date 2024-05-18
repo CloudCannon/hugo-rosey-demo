@@ -75,7 +75,7 @@
           x-transition>
           {{ range .items }} {{ $url := .link }}
           <li>
-            <a class="nav-link" href="{{ .link }}" data-rosey="{{ .text }}"
+            <a class="nav-link" href="{{ .link }}"
               >{{ .text }}</a
             >
           </li>
@@ -85,7 +85,7 @@
         <ul class="{{ $c }}__nav-list">
           {{ range .items }} {{ $url := .link }}
           <li class="{{ $c }}__nav-list-item">
-            <a class="nav-link" href="{{ .link }}" data-rosey="{{ .text }}"
+            <a class="nav-link" href="{{ .link }}"
               >{{ .text }}</a
             >
           </li>
