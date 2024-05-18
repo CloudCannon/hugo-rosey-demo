@@ -89,26 +89,31 @@ async function main(locale) {
       const pageNameCapitalised = pageName[0].toUpperCase() + pageName.slice(1);
       const pagePath = page.replace('/index.html', '');
       // TODO: Tidy this replace up - maybe regex?
-      const urlHighlighterStringLength = 20
+      console.log(originalPhrase.split(' ').slice(0, 3).join(' '));
+      const urlHighlighterWordLength = 3;
+      const originalPhraseArray = originalPhrase.split(' ');
       const startHighlight = encodeURI(
-        originalPhrase
-          .substring(0, urlHighlighterStringLength)
+        originalPhraseArray
+          .slice(0, urlHighlighterWordLength)
+          .join(' ')
           .replaceAll('<p>', '')
           .replaceAll('</p>', '')
       );
       const endHighlight = encodeURI(
-        originalPhrase
-          .substring(originalPhrase.length, originalPhrase.length - urlHighlighterStringLength)
+        originalPhraseArray
+          .slice(
+            originalPhraseArray.length,
+            originalPhraseArray.length - urlHighlighterWordLength
+          )
+          .join(' ')
           .replaceAll('<p>', '')
           .replaceAll('</p>', '')
       );
       const encodedOriginalPhrase = encodeURI(
-        originalPhrase
-          .replaceAll('<p>', '')
-          .replaceAll('</p>', '')
+        originalPhrase.replaceAll('<p>', '').replaceAll('</p>', '')
       );
       const locationString =
-        originalPhrase.length > urlHighlighterStringLength
+        originalPhraseArray.length > urlHighlighterWordLength
           ? `[${pageNameCapitalised}](${baseURL}${pagePath}#:~:text=${startHighlight},${endHighlight})`
           : `[${pageNameCapitalised}](${baseURL}${pagePath}#:~:text=${encodedOriginalPhrase})`;
       return locationString;
@@ -146,7 +151,7 @@ async function main(locale) {
 
     cleanedOutputFileData['_inputs'][inputKey] = {
       label: nhm.translate(originalPhrase),
-      hidden: originalPhrase === "" ? true : false,
+      hidden: originalPhrase === '' ? true : false,
       type: inputType,
       comment: translationLocations.join(' | '),
     };
