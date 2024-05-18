@@ -1,15 +1,7 @@
-const markdownit = require('markdown-it');
-const {
-  NodeHtmlMarkdown,
-  NodeHtmlMarkdownOptions,
-} = require('node-html-markdown');
+const { NodeHtmlMarkdown } = require('node-html-markdown');
 
 const fs = require('file-system');
 const YAML = require('yaml');
-// const slugify = require('slugify');
-// const md = markdownit({
-//   html: true,
-// });
 const nhm = new NodeHtmlMarkdown(
   /* options (optional) */ {},
   /* customTransformers (optional) */ undefined,
@@ -34,6 +26,7 @@ async function main(locale) {
   } else {
     console.log('rosey/base.json does not exist');
   }
+
   // Get all the pages that appear in the base.json
   const translationEntryKeys = Object.keys(inputFileData);
   const translationEntries = translationEntryKeys.map((key) => {
@@ -42,12 +35,14 @@ async function main(locale) {
   });
 
   let allPages = [];
+
   translationEntries.forEach((entry) => {
     const entrysPages = Object.keys(entry.pages);
     entrysPages.forEach((page) => {
       allPages.push(page);
     });
   });
+
   const pages = allPages.reduce((accumulator, item) => {
     if (!accumulator.includes(item)) {
       accumulator.push(item);
@@ -86,9 +81,8 @@ async function main(locale) {
       const inputTranslationObjectPages = Object.keys(
         inputTranslationObj.pages
       );
-      // If page exists in inputTranslationObj's pages obj as a key
-      // Do all of the below otherwise return
 
+      // If input exists on this page
       if (inputTranslationObjectPages.includes(page)) {
         const originalPhrase = inputTranslationObj.original.trim();
 
@@ -105,15 +99,6 @@ async function main(locale) {
         if (!cleanedOutputFileData[inputKey]) {
           cleanedOutputFileData[inputKey] = '';
         }
-
-        // Find the pages the translation appears on, but not tags and categories pages
-        // const translationPages = Object.keys(inputTranslationObj.pages).filter(
-        //   (page) => {
-        //     return (
-        //       page !== 'tags/index.html' && page !== 'categories/index.html'
-        //     );
-        //   }
-        // );
 
         // Write the string to link to the location
         const urlHighlighterWordLength = 3;
@@ -141,8 +126,8 @@ async function main(locale) {
         const pageString = page.replace('.html', '').replace('index', '');
         const locationString =
           originalPhraseArray.length > urlHighlighterWordLength
-            ? `[Go to Location](${baseURL}${pageString}#:~:text=${startHighlight},${endHighlight})`
-            : `[Go to Location](${baseURL}${pageString}#:~:text=${encodedOriginalPhrase})`;
+            ? `[Preview](${baseURL}${pageString}#:~:text=${startHighlight},${endHighlight})`
+            : `[Preview](${baseURL}${pageString}#:~:text=${encodedOriginalPhrase})`;
 
         // Create the inputs obj if there is none
         if (!cleanedOutputFileData['_inputs']) {
@@ -171,7 +156,7 @@ async function main(locale) {
           };
         }
 
-        // Add each entry to our _inputs obj - no need to preserve these between translations
+        // Add each entry to our _inputs obj
         const inputType = originalPhrase.length < 20 ? 'text' : 'textarea';
         const label = nhm.translate(originalPhrase);
 
@@ -179,15 +164,10 @@ async function main(locale) {
           label: '',
           hidden: originalPhrase === '' ? true : false,
           type: inputType,
-          comment: `
-          ${locationString}\n
-          ${label}
-          `,
+          comment: `${locationString} | ${label}`,
         };
 
         // Add each entry to page object group depending on whether they are translated or not
-        // if translation key is an empty string, or is not yet in the output file add it to untranslated
-        // else add it to translated
         const unTranslatedPageGroup =
           cleanedOutputFileData['_inputs']['$'].options.groups[0].inputs;
 
@@ -195,10 +175,8 @@ async function main(locale) {
           cleanedOutputFileData['_inputs']['$'].options.groups[1].inputs;
 
         if (cleanedOutputFileData[inputKey].length > 0) {
-          // console.log('translated', inputKey, cleanedOutputFileData[inputKey]);
           translatedPageGroup.push(inputKey);
         } else {
-          // console.log('untranslated', inputKey, cleanedOutputFileData[inputKey]);
           unTranslatedPageGroup.push(inputKey);
         }
       }
