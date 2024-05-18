@@ -6,7 +6,7 @@
       <a class="{{ $c }}__logo" href="/">
         <img src="{{ .logo }}" alt="Nav-Logo" />
       </a>
-      <div class="{{ $c }}__nav" x-data="{ open: false }">
+      <div class="{{ $c }}__nav" x-data="{ open: false, langopen: false }">
         <!-- Hamburger -->
         <button x-on:click="open = ! open" class="{{ $c }}__hamburger">
           <span x-show="!open" class="navbar-toggler-default">
@@ -67,6 +67,7 @@
             </svg>
           </span>
         </button>
+
         <!-- Mobile nav -->
         <ul
           class="{{ $c }}__nav-list-mobile"
@@ -87,21 +88,39 @@
           </li>
           {{ end }}
         </ul>
-        <p>Languages</p>
-        <ul>
+        <button x-on:click="langopen = !langopen" class="">
+          <img class="w-12" src="/images/icons/language-solid.svg" alt="">
+        </button>
+        <ul 
+          class="{{ $c }}__lang-list-mobile"
+          x-show="langopen"
+          x-cloak
+          x-transition>
           {{ if eq hugo.Environment "production"}}
-          {{ $locales := getenv "LOCALES" }}
-            {{ with $locales }}
-              <li>{{ . }}</li>
+          {{ $localesString := getenv "LOCALES" }}
+          {{ $locales := split $localesString "," }}
+            {{ range $locales }}
+              <li><a href="/{{ . }}/{{ $.Page.RelPermalink }}">{{ . }}</a></li>
             {{ end }}
           {{ else }}
-            {{ $locales := "fr-fr,de-de" }}
-            {{ with $locales }}
-              <li>{{ . }}</li>
+            {{ $localesString := "fr-fr,de-de,es-es,en" }}
+            {{ $locales := split $localesString "," }}
+            {{ range $locales }}
+            {{ $locale := . }}
+              <li>
+                <a href="/{{ . }}/{{ $.Page.RelPermalink }}">
+                  {{ range $.Site.Data.locales }}
+                    {{ if eq .code $locale }}
+                      <span>{{ .name }}</span>
+                      <img class="w-[32px]" src="{{ .flag }}" alt="{{ .name }} Flag">
+                    {{ end }}
+                  {{ end }}
+                </a>
+              </li>
             {{ end }}
           {{ end }}
         </ul>
-        <span class="text-black">{{ $.Page }}</span>
+
       </div>
     </div>
   </nav>

@@ -37,12 +37,13 @@ body {
   &__nav {
     display: flex;
     align-items: center;
+    gap: 1rem;
   }
 
   &__nav-list {
     display: none;
 
-    @media screen and (min-width: $max-width-xl) {
+    @media screen and (min-width: $max-width-md) {
       position: static;
       display: flex;
       padding: 0;
@@ -82,14 +83,42 @@ body {
     border-radius: 0 0 0 4px;
     font-family: $font-primary;
     letter-spacing: 1.2;
-    color: text;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     li {
       margin-bottom: .5rem;
     }
 
-    @media screen and (min-width: $max-width-xl) {
+    @media screen and (min-width: $max-width-md) {
       display: none !important;
+    }
+  }
+  &__lang-list-mobile {
+    position: absolute;
+    z-index: 99;
+    top: 76px;
+    right: 0;
+
+
+    width: max-content;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0 0 0 4px;
+    font-family: $font-primary;
+    letter-spacing: 1.2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end;
+    gap: 1rem;
+
+    li a{
+      
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: .5rem;
     }
   }
 
@@ -98,7 +127,7 @@ body {
     border: none;
     background: none;
 
-    @media screen and (min-width: $max-width-xl) {
+    @media screen and (min-width: $max-width-md) {
       display: none;
     }
   }
