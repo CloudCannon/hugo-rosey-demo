@@ -102,8 +102,8 @@ async function main(locale) {
       const endHighlight = encodeURI(
         originalPhraseArray
           .slice(
-            originalPhraseArray.length,
-            originalPhraseArray.length - urlHighlighterWordLength
+            originalPhraseArray.length - urlHighlighterWordLength,
+            originalPhraseArray.length
           )
           .join(' ')
           .replaceAll('<p>', '')
