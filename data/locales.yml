@@ -6,7 +6,7 @@
   flag: /images/flags/germany-flag.png 
 - code: fr-fr
   name: French
-  flag: images/flags/germany-flag.png 
+  flag: /images/flags/france-flag.png
 - code: en
-  name: English
-  flag: /images/flags/germany-flag.png 
+  name: English (US)
+  flag: /images/flags/usa-flag.jpeg 

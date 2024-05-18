@@ -87,7 +87,7 @@ async function main(locale) {
         const originalPhrase = inputTranslationObj.original.trim();
 
         // Only add the key to our output data if it still exists in base.json
-        // If entry no longer exists in base.json we don't add it
+        // If entry no longer exists in base.json it's content has changed in the visual editor
         const outputKeys = Object.keys(outputFileData);
         outputKeys.forEach((key) => {
           if (inputKey === key) {
@@ -161,11 +161,22 @@ async function main(locale) {
         const markdownTextInput = inputKey.slice(0, 10).includes('markdown:')
         const inputType = markdownTextInput ? 'markdown' : originalPhrase.length < 20 ? 'text' : 'textarea';
         const markdownOriginal = nhm.translate(originalPhrase);
+        const options = markdownTextInput ? {
+          bold: true,
+          italic: true,
+          strike: true,
+          underline: true,
+          link: true,
+          undo: true,
+          redo: true,
+          removeformat: true
+        } : {};
 
         cleanedOutputFileData['_inputs'][inputKey] = {
           label: `Translation (${locale})`,
           hidden: originalPhrase === '' ? true : false,
           type: inputType,
+          options: options,
           comment: `${markdownOriginal} | ${locationString}`,
         };
 
