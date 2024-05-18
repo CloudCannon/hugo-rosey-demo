@@ -21,7 +21,13 @@ content_blocks:
       CloudCannon's build configuration.
 
 
-      A new test paragraph
+      A new test paragraph, with **some** ***markdown to <u>put</u>*** the demo
+      through its <s>paces</s> tests.
+
+      A line break
+
+
+      Another new paragraph
     button:
       _bookshop_name: global/button
       path: https://rosey.app/
