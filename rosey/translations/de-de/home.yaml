@@ -20,85 +20,47 @@ _inputs:
     label: ""
     hidden: false
     type: textarea
-    comment: "
-
-      \          [Go to
-      Location](https://rugged-mandolin.cloudvent.net/#:~:text=A%20demonstratio\
-      n%20of,Another%20new%20paragraph)
-
-
-      \          A demonstration of how Hugo and Rosey work in CloudCannon. This
-      site has extra setup so that we can enter translations via the CloudCannon
-      GUI. Additional languages can be set in the environment variables in
+    comment: >-
+      [Preview](https://rugged-mandolin.cloudvent.net/#:~:text=A%20demonstration%20of,Another%20new%20paragraph)
+      | A demonstration of how Hugo and Rosey work in CloudCannon. This site has
+      extra setup so that we can enter translations via the CloudCannon GUI.
+      Additional languages can be set in the environment variables in
       CloudCannon’s build configuration.
 
 
       A new test paragraph, with **some** _**markdown to put**_ the demo through
-      its paces tests. \ 
+      its paces tests.  
 
       A line break
 
 
       Another new paragraph
-
-      \          "
   hugo-rosey-demo:
     label: ""
     hidden: false
     type: text
-    comment: "
-
-      \          [Go to
-      Location](https://rugged-mandolin.cloudvent.net/#:~:text=Hugo%20Rosey%20D\
-      emo)
-
-
-      \          Hugo Rosey Demo
-
-      \          "
+    comment: "[Preview](https://rugged-mandolin.cloudvent.net/#:~:text=Hugo%20Rosey\
+      %20Demo) | Hugo Rosey Demo"
   keep-what-you-need-delete-the-rest:
     label: ""
     hidden: false
     type: textarea
-    comment: "
-
-      \          [Go to
-      Location](https://rugged-mandolin.cloudvent.net/#:~:text=Keep%20what%20yo\
-      u,Delete%20the%20rest.)
-
-
-      \          Keep what you need. Delete the rest.
-
-      \          "
+    comment: "[Preview](https://rugged-mandolin.cloudvent.net/#:~:text=Keep%20what%\
+      20you,Delete%20the%20rest.) | Keep what you need. Delete the rest."
   make-your-own-copy-of-this-repository-reference-it-or-use-it-as-a-template-to-get-up-and-running-with-translation-workflows-in-cloudcannon-using-rosey:
     label: ""
     hidden: false
     type: textarea
-    comment: "
-
-      \          [Go to
-      Location](https://rugged-mandolin.cloudvent.net/#:~:text=Make%20your%20ow\
-      n,CloudCannon%20using%20Rosey.)
-
-
-      \          Make your own copy of this repository. Reference it or use it
-      as a template to get up and running with translation workflows in
-      CloudCannon using Rosey.
-
-      \          "
+    comment: "[Preview](https://rugged-mandolin.cloudvent.net/#:~:text=Make%20your%\
+      20own,CloudCannon%20using%20Rosey.) | Make your own copy of this
+      repository. Reference it or use it as a template to get up and running
+      with translation workflows in CloudCannon using Rosey."
   read-more:
     label: ""
     hidden: false
     type: text
-    comment: "
-
-      \          [Go to
-      Location](https://rugged-mandolin.cloudvent.net/#:~:text=Read%20More)
-
-
-      \          Read More
-
-      \          "
+    comment: "[Preview](https://rugged-mandolin.cloudvent.net/#:~:text=Read%20More)
+      | Read More"
 hugo-rosey-demo: ""
 keep-what-you-need-delete-the-rest: ""
 make-your-own-copy-of-this-repository-reference-it-or-use-it-as-a-template-to-get-up-and-running-with-translation-workflows-in-cloudcannon-using-rosey: ""
