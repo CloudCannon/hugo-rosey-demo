@@ -158,7 +158,8 @@ async function main(locale) {
         }
 
         // Add each entry to our _inputs obj
-        const inputType = originalPhrase.length < 20 ? 'text' : 'textarea';
+        const markdownTextInput = inputKey.slice(0, 10).includes('markdown:')
+        const inputType = markdownTextInput ? 'markdown' : originalPhrase.length < 20 ? 'text' : 'textarea';
         const markdownOriginal = nhm.translate(originalPhrase);
 
         cleanedOutputFileData['_inputs'][inputKey] = {

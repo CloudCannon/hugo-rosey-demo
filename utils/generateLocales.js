@@ -1,5 +1,7 @@
 const fs = require('file-system');
 const YAML = require('yaml');
+const markdownit = require('markdown-it');
+const md = markdownit();
 
 const translationsDirPath = './rosey/translations';
 const localesDirPath = './rosey/locales';
@@ -38,12 +40,18 @@ async function main(locale) {
 
         // If obj doesn't exist in our locales file or has a blank value, and isn't the inputs object, add it with the translated value
         if (key !== '_inputs') {
+          const isKeyMarkdown = key.slice(0, 10).includes('markdown:');
+
+          const value =
+            translationEntry == ''
+              ? roseyJSON[key]?.original
+              : isKeyMarkdown
+              ? md.render(translationEntry)
+              : translationEntry;
+
           localeData[key] = {
             original: roseyJSON[key]?.original,
-            value:
-              translationEntry == ''
-                ? roseyJSON[key]?.original
-                : translationEntry,
+            value: value,
           };
         }
       }
