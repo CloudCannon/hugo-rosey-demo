@@ -2,6 +2,7 @@ a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-se
 _inputs:
   $:
     type: object
+    comment: "[Go to Page](https://rugged-mandolin.cloudvent.net/about/)"
     options:
       place_groups_below: false
       groups:
@@ -21,8 +22,7 @@ _inputs:
     hidden: false
     type: textarea
     comment: >-
-      [Preview](https://rugged-mandolin.cloudvent.net/about/#:~:text=A%20demonstration%20of,Another%20new%20paragraph)
-      | A demonstration of how Hugo and Rosey work in CloudCannon. This site has
+      A demonstration of how Hugo and Rosey work in CloudCannon. This site has
       extra setup so that we can enter translations via the CloudCannon GUI.
       Additional languages can be set in the environment variables in
       CloudCannon’s build configuration.
@@ -34,33 +34,39 @@ _inputs:
       A line break
 
 
-      Another new paragraph
+      Another new paragraph | [See
+      Context](https://rugged-mandolin.cloudvent.net/about/#:~:text=A%20demonstration%20of,Another%20new%20paragraph)
+      | 
   hugo-rosey-demo:
     label: de-de Translation
     hidden: false
     type: text
-    comment: "[Preview](https://rugged-mandolin.cloudvent.net/about/#:~:text=Hugo%2\
-      0Rosey%20Demo) | Hugo Rosey Demo"
+    comment: "Hugo Rosey Demo | [See
+      Context](https://rugged-mandolin.cloudvent.net/about/#:~:text=Hugo%20Rose\
+      y%20Demo) | "
   keep-what-you-need-delete-the-rest:
     label: de-de Translation
     hidden: false
     type: textarea
-    comment: "[Preview](https://rugged-mandolin.cloudvent.net/about/#:~:text=Keep%2\
-      0what%20you,Delete%20the%20rest.) | Keep what you need. Delete the rest."
+    comment: "Keep what you need. Delete the rest. | [See
+      Context](https://rugged-mandolin.cloudvent.net/about/#:~:text=Keep%20what\
+      %20you,Delete%20the%20rest.) | "
   make-your-own-copy-of-this-repository-reference-it-or-use-it-as-a-template-to-get-up-and-running-with-translation-workflows-in-cloudcannon-using-rosey:
     label: de-de Translation
     hidden: false
     type: textarea
-    comment: "[Preview](https://rugged-mandolin.cloudvent.net/about/#:~:text=Make%2\
-      0your%20own,CloudCannon%20using%20Rosey.) | Make your own copy of this
-      repository. Reference it or use it as a template to get up and running
-      with translation workflows in CloudCannon using Rosey."
+    comment: "Make your own copy of this repository. Reference it or use it as a
+      template to get up and running with translation workflows in CloudCannon
+      using Rosey. | [See
+      Context](https://rugged-mandolin.cloudvent.net/about/#:~:text=Make%20your\
+      %20own,CloudCannon%20using%20Rosey.) | "
   read-more:
     label: de-de Translation
     hidden: false
     type: text
-    comment: "[Preview](https://rugged-mandolin.cloudvent.net/about/#:~:text=Read%2\
-      0More) | Read More"
+    comment: "Read More | [See
+      Context](https://rugged-mandolin.cloudvent.net/about/#:~:text=Read%20More)
+      | "
 hugo-rosey-demo: ""
 keep-what-you-need-delete-the-rest: ""
 make-your-own-copy-of-this-repository-reference-it-or-use-it-as-a-template-to-get-up-and-running-with-translation-workflows-in-cloudcannon-using-rosey: ""
