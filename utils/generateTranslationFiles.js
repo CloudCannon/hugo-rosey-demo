@@ -87,7 +87,7 @@ async function main(locale) {
         const originalPhrase = inputTranslationObj.original.trim();
 
         // Only add the key to our output data if it still exists in base.json
-        // If entry no longer exists in base.json we don't add it
+        // If entry no longer exists in base.json it's content has changed in the visual editor
         const outputKeys = Object.keys(outputFileData);
         outputKeys.forEach((key) => {
           if (inputKey === key) {

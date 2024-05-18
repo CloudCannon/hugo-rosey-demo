@@ -113,20 +113,30 @@
                 </li>
             {{ end }}
           {{ else }}
-            {{ $localesString := "fr-fr,de-de,es-es,en" }}
+            {{ $localesString := "fr-fr,de-de,es-es" }}
             {{ $locales := split $localesString "," }}
             {{ range $locales }}
-            {{ $locale := . }}
-              <li>
-                <a href="/{{ . }}/{{ $.Page.RelPermalink }}">
-                  {{ range $.Site.Data.locales }}
-                    {{ if eq .code $locale }}
+              {{ $locale := . }}
+              {{ range $.Site.Data.locales }}
+                <li>
+                  {{ if eq .code $locale }}
+                    <a href="/{{ $locale }}/{{ $.Page.RelPermalink }}">
                       <span>{{ .name }}</span>
                       <img class="w-[32px]" src="{{ .flag }}" alt="{{ .name }} Flag">
-                    {{ end }}
+                      </a>
                   {{ end }}
-                </a>
-              </li>
+                </li>
+              {{ end }}
+            {{ end }}
+            {{ range $.Site.Data.locales }}
+              {{ if eq .code "en" }}
+                <li>
+                  <a href="/en/{{ $.Page.RelPermalink }}">
+                  <span>{{ .name }}</span>
+                  <img class="w-[32px]" src="{{ .flag }}" alt="{{ .name }} Flag">
+                  </a>
+                </li>
+              {{ end }}
             {{ end }}
           {{ end }}
         </ul>
