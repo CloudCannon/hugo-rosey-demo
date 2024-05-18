@@ -97,10 +97,20 @@
           x-cloak
           x-transition>
           {{ if eq hugo.Environment "production"}}
-          {{ $localesString := getenv "LOCALES" }}
-          {{ $locales := split $localesString "," }}
+            {{ $localesString := getenv "LOCALES" }}
+            {{ $locales := split $localesString "," }}
             {{ range $locales }}
-              <li><a href="/{{ . }}/{{ $.Page.RelPermalink }}">{{ . }}</a></li>
+              {{ $locale := . }}
+                <li>
+                  <a href="/{{ . }}/{{ $.Page.RelPermalink }}">
+                    {{ range $.Site.Data.locales }}
+                      {{ if eq .code $locale }}
+                        <span>{{ .name }}</span>
+                        <img class="w-[32px]" src="{{ .flag }}" alt="{{ .name }} Flag">
+                      {{ end }}
+                    {{ end }}
+                  </a>
+                </li>
             {{ end }}
           {{ else }}
             {{ $localesString := "fr-fr,de-de,es-es,en" }}
