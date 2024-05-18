@@ -88,10 +88,8 @@ async function main(locale) {
           : page.replace('/index.html', '').replaceAll('-', ' ');
       const pageNameCapitalised = pageName[0].toUpperCase() + pageName.slice(1);
       const pagePath = page.replace('/index.html', '');
-      // TODO: Tidy this replace up - maybe regex?
-      console.log(originalPhrase.split(' ').slice(0, 3).join(' '));
       const urlHighlighterWordLength = 3;
-      const originalPhraseArray = originalPhrase.split(' ');
+      const originalPhraseArray = originalPhrase.split(/[\s\n]+/);
       const startHighlight = encodeURI(
         originalPhraseArray
           .slice(0, urlHighlighterWordLength)
