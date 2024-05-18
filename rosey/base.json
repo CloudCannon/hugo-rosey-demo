@@ -1,14 +1,6 @@
 {
   "version": 2,
   "keys": {
-    "a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configurationa-new-test-paragraph-with-some-markdown-to-uputu-the-demo-through-its-spacess-testsa-line-breakanother-new-paragraph": {
-      "original": "\n      <p>A demonstration of how Hugo and Rosey work in CloudCannon. This site has extra setup so that we can enter translations via the CloudCannon GUI. Additional languages can be set in the environment variables in CloudCannon’s build configuration.</p>\n<p>A new test paragraph, with <strong>some</strong> <em><strong>markdown to <!-- raw HTML omitted -->put<!-- raw HTML omitted --></strong></em> the demo through its <!-- raw HTML omitted -->paces<!-- raw HTML omitted --> tests.<br>\nA line break</p>\n<p>Another new paragraph</p>\n\n    ",
-      "value": null,
-      "pages": {
-        "index.html": 1
-      },
-      "total": 1
-    },
     "hugo-rosey-demo": {
       "original": "Hugo Rosey Demo",
       "value": null,
@@ -43,6 +35,22 @@
       },
       "total": 1
     },
+    "markdown:a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configurationa-new-test-paragraph-with-some-markdown-to-uputu-the-demo-through-its-spacess-testsa-line-breakanother-new-paragraph": {
+      "original": "\n      <p>A demonstration of how Hugo and Rosey work in CloudCannon. This site has extra setup so that we can enter translations via the CloudCannon GUI. Additional languages can be set in the environment variables in CloudCannon’s build configuration.</p>\n<p>A new test paragraph, with <strong>some</strong> <em><strong>markdown to <!-- raw HTML omitted -->put<!-- raw HTML omitted --></strong></em> the demo through its <!-- raw HTML omitted -->paces<!-- raw HTML omitted --> tests.<br>\nA line break</p>\n<p>Another new paragraph</p>\n\n    ",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:the-about-page": {
+      "original": "\n      The about page\n    ",
+      "value": null,
+      "pages": {
+        "about/index.html": 1
+      },
+      "total": 1
+    },
     "read-more": {
       "original": "\n    Read More\n  ",
       "value": null,
@@ -51,14 +59,6 @@
         "index.html": 2
       },
       "total": 4
-    },
-    "the-about-page": {
-      "original": "\n      The about page\n    ",
-      "value": null,
-      "pages": {
-        "about/index.html": 1
-      },
-      "total": 1
     }
   }
 }

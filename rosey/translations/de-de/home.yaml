@@ -1,4 +1,4 @@
-a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configurationa-new-test-paragraph-with-some-markdown-to-uputu-the-demo-through-its-spacess-testsa-line-breakanother-new-paragraph: ""
+hugo-rosey-demo: ""
 _inputs:
   $:
     type: object
@@ -9,33 +9,14 @@ _inputs:
         - heading: Untranslated
           comment: "[To be translated](https://rugged-mandolin.cloudvent.net/)"
           inputs:
-            - a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configurationa-new-test-paragraph-with-some-markdown-to-uputu-the-demo-through-its-spacess-testsa-line-breakanother-new-paragraph
             - hugo-rosey-demo
             - keep-what-you-need-delete-the-rest
             - make-your-own-copy-of-this-repository-reference-it-or-use-it-as-a-template-to-get-up-and-running-with-translation-workflows-in-cloudcannon-using-rosey
+            - markdown:a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configurationa-new-test-paragraph-with-some-markdown-to-uputu-the-demo-through-its-spacess-testsa-line-breakanother-new-paragraph
             - read-more
         - heading: Translated
           comment: "[Already translated](https://rugged-mandolin.cloudvent.net/)"
           inputs: []
-  a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configurationa-new-test-paragraph-with-some-markdown-to-uputu-the-demo-through-its-spacess-testsa-line-breakanother-new-paragraph:
-    label: Translation (de-de)
-    hidden: false
-    type: textarea
-    comment: >-
-      A demonstration of how Hugo and Rosey work in CloudCannon. This site has
-      extra setup so that we can enter translations via the CloudCannon GUI.
-      Additional languages can be set in the environment variables in
-      CloudCannon’s build configuration.
-
-
-      A new test paragraph, with **some** _**markdown to put**_ the demo through
-      its paces tests.  
-
-      A line break
-
-
-      Another new paragraph | [See
-      Context](https://rugged-mandolin.cloudvent.net/#:~:text=A%20demonstration%20of,Another%20new%20paragraph)
   hugo-rosey-demo:
     label: Translation (de-de)
     hidden: false
@@ -56,13 +37,32 @@ _inputs:
       template to get up and running with translation workflows in CloudCannon
       using Rosey. | [See
       Context](https://rugged-mandolin.cloudvent.net/#:~:text=Make%20your%20own,CloudCannon%20using%20Rosey.)
+  markdown:a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configurationa-new-test-paragraph-with-some-markdown-to-uputu-the-demo-through-its-spacess-testsa-line-breakanother-new-paragraph:
+    label: Translation (de-de)
+    hidden: false
+    type: markdown
+    comment: >-
+      A demonstration of how Hugo and Rosey work in CloudCannon. This site has
+      extra setup so that we can enter translations via the CloudCannon GUI.
+      Additional languages can be set in the environment variables in
+      CloudCannon’s build configuration.
+
+
+      A new test paragraph, with **some** _**markdown to put**_ the demo through
+      its paces tests.  
+
+      A line break
+
+
+      Another new paragraph | [See
+      Context](https://rugged-mandolin.cloudvent.net/#:~:text=A%20demonstration%20of,Another%20new%20paragraph)
   read-more:
     label: Translation (de-de)
     hidden: false
     type: text
     comment: Read More | [See
       Context](https://rugged-mandolin.cloudvent.net/#:~:text=Read%20More)
-hugo-rosey-demo: ""
 keep-what-you-need-delete-the-rest: ""
 make-your-own-copy-of-this-repository-reference-it-or-use-it-as-a-template-to-get-up-and-running-with-translation-workflows-in-cloudcannon-using-rosey: ""
+markdown:a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configurationa-new-test-paragraph-with-some-markdown-to-uputu-the-demo-through-its-spacess-testsa-line-breakanother-new-paragraph: ""
 read-more: ""

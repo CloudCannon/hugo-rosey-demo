@@ -12,8 +12,8 @@ _inputs:
             - hugo-rosey-demo
             - its-all-about-about-baby
             - keep-what-you-need-delete-the-rest
+            - markdown:the-about-page
             - read-more
-            - the-about-page
         - heading: Translated
           comment: "[Already translated](https://rugged-mandolin.cloudvent.net/about/)"
           inputs: []
@@ -35,19 +35,19 @@ _inputs:
     type: textarea
     comment: Keep what you need. Delete the rest. | [See
       Context](https://rugged-mandolin.cloudvent.net/about/#:~:text=Keep%20what%20you,Delete%20the%20rest.)
+  markdown:the-about-page:
+    label: Translation (fr-fr)
+    hidden: false
+    type: markdown
+    comment: The about page | [See
+      Context](https://rugged-mandolin.cloudvent.net/about/#:~:text=The%20about%20page)
   read-more:
     label: Translation (fr-fr)
     hidden: false
     type: text
     comment: Read More | [See
       Context](https://rugged-mandolin.cloudvent.net/about/#:~:text=Read%20More)
-  the-about-page:
-    label: Translation (fr-fr)
-    hidden: false
-    type: text
-    comment: The about page | [See
-      Context](https://rugged-mandolin.cloudvent.net/about/#:~:text=The%20about%20page)
 its-all-about-about-baby: ""
 keep-what-you-need-delete-the-rest: ""
+markdown:the-about-page: ""
 read-more: ""
-the-about-page: ""
