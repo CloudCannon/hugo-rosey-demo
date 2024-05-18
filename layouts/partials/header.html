@@ -101,16 +101,26 @@
             {{ $locales := split $localesString "," }}
             {{ range $locales }}
               {{ $locale := . }}
+              {{ range $.Site.Data.locales }}
                 <li>
-                  <a href="/{{ . }}/{{ $.Page.RelPermalink }}">
-                    {{ range $.Site.Data.locales }}
-                      {{ if eq .code $locale }}
-                        <span>{{ .name }}</span>
-                        <img class="w-[32px]" src="{{ .flag }}" alt="{{ .name }} Flag">
-                      {{ end }}
-                    {{ end }}
+                  {{ if eq .code $locale }}
+                    <a href="/{{ $locale }}/{{ $.Page.RelPermalink }}">
+                      <span>{{ .name }}</span>
+                      <img class="w-[32px]" src="{{ .flag }}" alt="{{ .name }} Flag">
+                      </a>
+                  {{ end }}
+                </li>
+              {{ end }}
+            {{ end }}
+            {{ range $.Site.Data.locales }}
+              {{ if eq .code "en" }}
+                <li>
+                  <a href="/en/{{ $.Page.RelPermalink }}">
+                  <span>{{ .name }}</span>
+                  <img class="w-[32px]" src="{{ .flag }}" alt="{{ .name }} Flag">
                   </a>
                 </li>
+              {{ end }}
             {{ end }}
           {{ else }}
             {{ $localesString := "fr-fr,de-de,es-es" }}
