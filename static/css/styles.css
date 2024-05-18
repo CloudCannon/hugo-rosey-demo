@@ -495,3 +495,9 @@ video {
 .block {
   display: block;
 }
+.w-12 {
+  width: 3rem;
+}
+.w-\[32px\] {
+  width: 32px;
+}

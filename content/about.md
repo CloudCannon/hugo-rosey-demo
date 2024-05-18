@@ -15,19 +15,7 @@ content_blocks:
   - _bookshop_name: hero
     heading: Hugo Rosey Demo
     text: >-
-      A demonstration of how Hugo and Rosey work in CloudCannon. This site has
-      extra setup so that we can enter translations via the CloudCannon GUI.
-      Additional languages can be set in the environment variables in
-      CloudCannon's build configuration.
-
-
-      A new test paragraph, with **some** ***markdown to <u>put</u>*** the demo
-      through its <s>paces</s> tests.
-
-      A line break
-
-
-      Another new paragraph
+      The about page
     button:
       _bookshop_name: global/button
       path: https://rosey.app/
@@ -37,9 +25,7 @@ content_blocks:
   - _bookshop_name: left-right
     heading: Keep what you need. Delete the rest.
     text: >-
-      Make your own copy of this repository. Reference it or use it as a
-      template to get up and running with translation workflows in CloudCannon
-      using Rosey.
+      Its all about about baby.
     button:
       _bookshop_name: global/button
       path: https://github.com/tomrcc/hugo-rosey-demo
