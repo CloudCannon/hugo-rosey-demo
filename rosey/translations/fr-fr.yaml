@@ -34,7 +34,7 @@ _inputs:
     hidden: false
     type: textarea
     comment: "[Homepage](https://rugged-mandolin.cloudvent.net/index.html#:~:text=A\
-      %20demonstration%20of,break%0AAnother%20new%20paragraph)"
+      %20demonstration%20of,Another%20new%20paragraph)"
   hugo-rosey-demo:
     label: Hugo Rosey Demo
     hidden: false
