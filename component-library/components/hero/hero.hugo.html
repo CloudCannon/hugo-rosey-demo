@@ -3,11 +3,15 @@
 <div class="{{ $c }}">
   <div class="{{ $c }}__wrapper">
     {{ with .heading }}
-    <h1 data-rosey="{{ . | anchorize }}">{{ . }}</h1>
-    {{ end }} {{ with .text }}
+      <h1 data-rosey="{{ . | anchorize }}">{{ . }}</h1>
+    {{ end }} 
+    {{ with .text }}
     <div data-rosey="{{ . | anchorize }}">
       {{ . | markdownify }}
     </div>
-    {{ end }} {{ with .button }} {{ partial "bookshop" . }} {{ end }}
+    {{ end }} 
+    {{ with .button }} 
+      {{ partial "bookshop" . }} 
+    {{ end }}
   </div>
 </div>

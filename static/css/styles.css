@@ -495,16 +495,9 @@ video {
 .block {
   display: block;
 }
-.w-\[32px\] {
-  width: 32px;
-}
-.w-4 {
-  width: 1rem;
-}
 .w-12 {
   width: 3rem;
 }
-.bg-red-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+.w-\[32px\] {
+  width: 32px;
 }
