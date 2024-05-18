@@ -11,12 +11,12 @@ _inputs:
           inputs:
             - hugo-rosey-demo
             - its-all-about-about-baby
-            - markdown:the-about-page
             - read-more
         - heading: Translated
           comment: "[Already translated](https://rugged-mandolin.cloudvent.net/about/)"
           inputs:
             - keep-what-you-need-delete-the-rest
+            - markdown:when-things-happen---enjoy-them-theyre-little-gifts-just-think-about-these-things-in-your-mind-and-drop-em-on-canvas-maybe-he-has-a-little-friend-that-lives-right-over-here-just-let-go---and-fall-like-a-little-waterfall-this-is-the-time-to-get-out-all-your-flustrations-much-better-than-kicking-the-dog-around-the-house-or-taking-it-out-on-your-spouseif-what-youre-doing-doesnt-make-you-happy---youre-doing-the-wrong-thing-take-your-time-speed-will-come-later-there-isnt-a-rule-you-just-practice-and-find-out-which-way-works-best-for-you-lets-go-up-in-here-and-start-having-some-fun-if-were-going-to-have-animals-around-we-all-have-to-be-concerned-about-them-and-take-care-of-them
   hugo-rosey-demo:
     label: Translation (de-de)
     hidden: false
@@ -38,7 +38,7 @@ _inputs:
     options: {}
     comment: Keep what you need. Delete the rest. | [See
       Context](https://rugged-mandolin.cloudvent.net/about/#:~:text=Keep%20what%20you,Delete%20the%20rest.)
-  markdown:the-about-page:
+  markdown:when-things-happen---enjoy-them-theyre-little-gifts-just-think-about-these-things-in-your-mind-and-drop-em-on-canvas-maybe-he-has-a-little-friend-that-lives-right-over-here-just-let-go---and-fall-like-a-little-waterfall-this-is-the-time-to-get-out-all-your-flustrations-much-better-than-kicking-the-dog-around-the-house-or-taking-it-out-on-your-spouseif-what-youre-doing-doesnt-make-you-happy---youre-doing-the-wrong-thing-take-your-time-speed-will-come-later-there-isnt-a-rule-you-just-practice-and-find-out-which-way-works-best-for-you-lets-go-up-in-here-and-start-having-some-fun-if-were-going-to-have-animals-around-we-all-have-to-be-concerned-about-them-and-take-care-of-them:
     label: Translation (de-de)
     hidden: false
     type: markdown
@@ -51,8 +51,20 @@ _inputs:
       undo: true
       redo: true
       removeformat: true
-    comment: The about page | [See
-      Context](https://rugged-mandolin.cloudvent.net/about/#:~:text=The%20about%20page)
+    comment: >-
+      When things happen - enjoy them. They’re little gifts. Just think about
+      these things in your mind and drop em’ on canvas. Maybe he has a little
+      friend that lives right over here. Just let go - and fall like a little
+      waterfall. This is the time to get out all your flustrations, much better
+      than kicking the dog around the house or taking it out on your spouse.
+
+
+      If what you’re doing doesn’t make you happy - you’re doing the wrong
+      thing. Take your time. Speed will come later. There isn’t a rule. You just
+      practice and find out which way works best for you. Let’s go up in here,
+      and start having some fun If we’re going to have animals around we all
+      have to be concerned about them and take care of them. | [See
+      Context](https://rugged-mandolin.cloudvent.net/about/#:~:text=When%20things%20happen,care%20of%20them.)
   read-more:
     label: Translation (de-de)
     hidden: false
@@ -62,5 +74,18 @@ _inputs:
       Context](https://rugged-mandolin.cloudvent.net/about/#:~:text=Read%20More)
 its-all-about-about-baby: ""
 keep-what-you-need-delete-the-rest: Behalten Sie, was Sie brauchen. Den Rest löschen.
-markdown:the-about-page: ""
+markdown:when-things-happen---enjoy-them-theyre-little-gifts-just-think-about-these-things-in-your-mind-and-drop-em-on-canvas-maybe-he-has-a-little-friend-that-lives-right-over-here-just-let-go---and-fall-like-a-little-waterfall-this-is-the-time-to-get-out-all-your-flustrations-much-better-than-kicking-the-dog-around-the-house-or-taking-it-out-on-your-spouseif-what-youre-doing-doesnt-make-you-happy---youre-doing-the-wrong-thing-take-your-time-speed-will-come-later-there-isnt-a-rule-you-just-practice-and-find-out-which-way-works-best-for-you-lets-go-up-in-here-and-start-having-some-fun-if-were-going-to-have-animals-around-we-all-have-to-be-concerned-about-them-and-take-care-of-them: >-
+  Wenn etwas passiert – genieße es. Es sind kleine Geschenke. Denken Sie einfach
+  über diese Dinge nach und bringen Sie sie auf die Leinwand. Vielleicht hat er
+  einen kleinen Freund, der hier wohnt. Einfach loslassen – und fallen wie ein
+  kleiner Wasserfall. Dies ist die Zeit, all Ihren Frustrationen freien Lauf zu
+  lassen, viel besser, als den Hund durch das Haus zu treten oder ihn an Ihrem
+  Ehepartner auszulassen.
+
+
+  Wenn das, was Sie tun, Sie nicht glücklich macht, tun Sie das Falsche. Lass
+  dir Zeit. Geschwindigkeit kommt später. Es gibt keine Regel. Üben Sie einfach
+  und finden Sie heraus, welcher Weg für Sie am besten funktioniert. Lasst uns
+  hier hochgehen und Spaß haben. Wenn wir Tiere in unserer Nähe haben wollen,
+  müssen wir uns alle um sie kümmern und uns um sie kümmern.
 read-more: ""
