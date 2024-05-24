@@ -10,6 +10,17 @@ Editors can see an input for each translation in the CloudCannon UI, and can ent
 We then run a script in our postbuild to generate the [locales files that Rosey expects](https://rosey.app/docs/#creating-locale-files) to create our multilingual site from.
 Rosey then uses these locales files, to generate a multilingual site.
 
+## Getting Started
+
+- To start using this template, go to the [GitHub repository](https://github.com/CloudCannon/hugo-rosey-demo/), and click `Use this template` to make your own copy.
+- Build the site on CloudCannon.
+- Create a staging site, with the environment variable `TRANSLATE=false`
+- Create a production site, with the environment variable `TRANSLATE=false`
+- Add the locales you want to translate to to the `LOCALES` environment variable, following the format `es-es`, with each locale separated by a comma.
+- Add the environment variable `SYNC_PATHS=/rosey/` to the staging site.
+- Enter a translation, wait for the build to finish, and publish to your production site.
+- Navigate to the adjective-noun.cloudvent.net address for your production site, and see Rosey redirect to your default browser language.
+
 ## Adding Translations
 
 When you add a new component using the placeholder `Hero`, or `LeftRight` components, an entry is added to our translations files to allow an editor to provide a translation.
