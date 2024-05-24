@@ -30,14 +30,14 @@ _inputs:
     type: textarea
     options: {}
     comment: Its all about about baby. | [See
-      Context](https://rugged-mandolin.cloudvent.net/about/#:~:text=Its%20all%20about,about%20about%20baby.)
+      Context](https://rugged-mandolin.cloudvent.net/about/#:~:text=Its%20all%20about%20about%20baby)
   keep-what-you-need-delete-the-rest:
     label: Translation (fr-fr)
     hidden: false
     type: textarea
     options: {}
     comment: Keep what you need. Delete the rest. | [See
-      Context](https://rugged-mandolin.cloudvent.net/about/#:~:text=Keep%20what%20you,Delete%20the%20rest.)
+      Context](https://rugged-mandolin.cloudvent.net/about/#:~:text=Keep%20what%20you,Delete%20the%20rest)
   markdown:when-things-happen---enjoy-them-theyre-little-gifts-just-think-about-these-things-in-your-mind-and-drop-em-on-canvas-maybe-he-has-a-little-friend-that-lives-right-over-here-just-let-go---and-fall-like-a-little-waterfall-this-is-the-time-to-get-out-all-your-flustrations-much-better-than-kicking-the-dog-around-the-house-or-taking-it-out-on-your-spouseif-what-youre-doing-doesnt-make-you-happy---youre-doing-the-wrong-thing-take-your-time-speed-will-come-later-there-isnt-a-rule-you-just-practice-and-find-out-which-way-works-best-for-you-lets-go-up-in-here-and-start-having-some-fun-if-were-going-to-have-animals-around-we-all-have-to-be-concerned-about-them-and-take-care-of-them:
     label: Translation (fr-fr)
     hidden: false
@@ -64,7 +64,7 @@ _inputs:
       practice and find out which way works best for you. Let’s go up in here,
       and start having some fun If we’re going to have animals around we all
       have to be concerned about them and take care of them. | [See
-      Context](https://rugged-mandolin.cloudvent.net/about/#:~:text=When%20things%20happen,care%20of%20them.)
+      Context](https://rugged-mandolin.cloudvent.net/about/#:~:text=When%20things%20happen,care%20of%20them)
   read-more:
     label: Translation (fr-fr)
     hidden: false

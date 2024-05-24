@@ -31,7 +31,7 @@ _inputs:
     type: textarea
     options: {}
     comment: Keep what you need. Delete the rest. | [See
-      Context](https://rugged-mandolin.cloudvent.net/#:~:text=Keep%20what%20you,Delete%20the%20rest.)
+      Context](https://rugged-mandolin.cloudvent.net/#:~:text=Keep%20what%20you,Delete%20the%20rest)
   make-your-own-copy-of-this-repository-reference-it-or-use-it-as-a-template-to-get-up-and-running-with-translation-workflows-in-cloudcannon-using-rosey:
     label: Translation (fr-fr)
     hidden: false
@@ -40,7 +40,7 @@ _inputs:
     comment: Make your own copy of this repository. Reference it or use it as a
       template to get up and running with translation workflows in CloudCannon
       using Rosey. | [See
-      Context](https://rugged-mandolin.cloudvent.net/#:~:text=Make%20your%20own,CloudCannon%20using%20Rosey.)
+      Context](https://rugged-mandolin.cloudvent.net/#:~:text=Make%20your%20own,CloudCannon%20using%20Rosey)
   markdown:a-demonstration-of-how-hugo-and-rosey-work-in-cloudcannon-this-site-has-extra-setup-so-that-we-can-enter-translations-via-the-cloudcannon-gui-additional-languages-can-be-set-in-the-environment-variables-in-cloudcannons-build-configurationa-new-test-paragraph-with-some-markdown-to-uputu-the-demo-through-its-spacess-testsa-line-breakanother-new-paragraph:
     label: Translation (fr-fr)
     hidden: false
